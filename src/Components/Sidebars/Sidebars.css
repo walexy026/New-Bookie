@@ -1,52 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 
 .sidebar {
-  font-family: 'Bree Serif', serif;
-    flex: 1;
-    height: calc(100vh - 50px);
-    width: 300px;
-    /* background-color: rgb(251, 251, 255); */
-    background-color: #1ABCCA;
-    color: #FFFFFF;
-    position: sticky;
-    top: 50px;
-  }
+  font-family: "Bree Serif", serif;
+  flex: 1;
+  height: calc(100vh - 50px);
+  max-width: 250px;
+  background-color: #1abcca;
+  color: #ffffff;
+  position: sticky;
+  top: 50px;
+}
 
-  .sidebarWrapper {
-    padding: 20px;
-    color: #555;
-  }
+.sidebarWrapper {
+  padding: 20px 0px 10px 20px;
+  color: #555;
+}
 
-  .sidebarMenu {
-    margin-bottom: 10px;
-  }
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+.sidebarLogo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #595757;
+}
+/* .sidebarTitle {
+  font-size: 13px;
+  color: rgb(187, 186, 186);
+} */
 
-  .sidebarTitle {
-    font-size: 13px;
-    color: rgb(187, 186, 186);
-  }
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+  color: #ffffff;
+}
 
-  .sidebarList {
-    list-style: none;
-    padding: 5px;
-    color: #FFFFFF;
-  }
-
-  .sidebarListItem {
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-  }
-
-  .sidebarListItem.active,
-  .sidebarListItem:hover {
-    background-color: rgb(240, 240, 255);
-    color: #595757;
-  }
-
-  .sidebarIcon{
-      margin-right: 5px;
-      font-size: 20px !important;
-  }
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 1px;
+  
+}
+.LogOut {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  padding: 5px 100px 5px 20px;
+  margin-bottom: 1rem;
+}
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: rgb(240, 240, 255);
+  color: #595757;
+}
