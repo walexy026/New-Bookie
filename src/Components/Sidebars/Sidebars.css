@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 .sidebar {
+  font-family: 'Bree Serif', serif;
     flex: 1;
     height: calc(100vh - 50px);
-    background-color: rgb(251, 251, 255);
+    width: 300px;
+    /* background-color: rgb(251, 251, 255); */
+    background-color: #1ABCCA;
+    color: #FFFFFF;
     position: sticky;
     top: 50px;
   }
@@ -23,6 +29,7 @@
   .sidebarList {
     list-style: none;
     padding: 5px;
+    color: #FFFFFF;
   }
 
   .sidebarListItem {
@@ -36,6 +43,7 @@
   .sidebarListItem.active,
   .sidebarListItem:hover {
     background-color: rgb(240, 240, 255);
+    color: #595757;
   }
 
   .sidebarIcon{
