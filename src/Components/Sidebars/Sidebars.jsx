@@ -8,9 +8,7 @@ import {BiUserPlus} from 'react-icons/bi'
 const Sidebars = () => {
   return (
     <div>
-      Sidebars
       <div className="sidebar">
-      
         <div className="sidebarWrapper">
         <div className="sidebarMenu">
         <ul className="sidebarList">
