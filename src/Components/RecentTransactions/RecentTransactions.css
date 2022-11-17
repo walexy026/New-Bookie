@@ -21,8 +21,12 @@
   
   .widgetLgUser{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    flex-direction: column;
     font-weight: 600;
+  }
+  .widgetSmName{
+    font-size: 10px;
   }
   
   .widgetLgImg {
