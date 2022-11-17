@@ -26,10 +26,6 @@
   font-size: 2rem;
   color: #595757;
 }
-/* .sidebarTitle {
-  font-size: 13px;
-  color: rgb(187, 186, 186);
-} */
 
 .sidebarList {
   list-style: none;
@@ -51,6 +47,10 @@
   color: #ffffff;
   padding: 5px 100px 5px 20px;
   margin-bottom: 1rem;
+}
+.LogOut:hover {
+  color: #595757;
+  
 }
 .sidebarListItem.active,
 .sidebarListItem:hover {
