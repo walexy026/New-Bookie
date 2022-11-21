@@ -1,12 +1,16 @@
 import React from 'react'
+import ImageSelector from '../ImageSelector/ImageSelector'
 import './Profiles.css'
 
 const Profiles = () => {
   return (
     <div>
-    <div className="profileWrapper">
       <h4>Profile</h4>
+    <div className="profileWrapper">
       <div className="profileGoal">
+        <div className='imageCropper'>
+      <ImageSelector/>
+        </div>
         <div class="row g-5 w-100">
           <div class="col">
             <label for="Full Name" class="form-label">
