@@ -5,6 +5,8 @@ import RecentTransactions from "../../Components/RecentTransactions/RecentTransa
 import Sidebars from "../../Components/Sidebars/Sidebars";
 import UpperPanel from "../../Components/UpperPanel/UpperPanel";
 import SavingsGoal from "../../Components/Savings/SavingsGoal";
+import Wallet from "../../Components/Wallet/Wallet";
+import Profiles from "../../Components/Profiles/Profiles";
 
 const Dashboard = () => {
   return (
@@ -18,6 +20,8 @@ const Dashboard = () => {
       </div>
       </div>
       <SavingsGoal/>
+      <Wallet/>
+      <Profiles/>
     </div>
   );
 };
