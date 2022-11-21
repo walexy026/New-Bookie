@@ -4,6 +4,7 @@ import { FeaturedInfo } from "../../Components/FeaturedInfo/FeaturedInfo";
 import RecentTransactions from "../../Components/RecentTransactions/RecentTransactions";
 import Sidebars from "../../Components/Sidebars/Sidebars";
 import UpperPanel from "../../Components/UpperPanel/UpperPanel";
+import SavingsGoal from "../../Components/Savings/SavingsGoal";
 
 const Dashboard = () => {
   return (
@@ -16,6 +17,7 @@ const Dashboard = () => {
       <RecentTransactions/>
       </div>
       </div>
+      <SavingsGoal/>
     </div>
   );
 };

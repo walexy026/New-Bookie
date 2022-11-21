@@ -1,0 +1,29 @@
+.savingWrapper{
+    background: #E4E8E9;
+
+}
+.savingGoal {
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  padding: 50px;
+  /* text-align: center; */
+}
+.savingGoal h4 {
+  text-align: left;
+}
+.savingsBtn {
+  display: grid;
+  place-items: center;
+}
+.savingsbtnSubmit {
+  background: #1abcca;
+  border-radius: 10px;
+  border: none;
+  padding: 0.6rem;
+  color: #ffffff;
+}
+.savingsbtnSubmit:hover {
+  background: #04454b;
+}
+
