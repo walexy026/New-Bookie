@@ -2,7 +2,7 @@ import { useFilePicker } from "use-file-picker";
 import React from "react";
 import { BsFillCameraFill } from "react-icons/bs";
 
-const ImageSelector = () => {
+const ImageSelector = ({style}) => {
   const [openFileSelector, { filesContent, loading, errors, clear }] = useFilePicker({
     readAs: "DataURL",
     accept: "image/*",
@@ -28,9 +28,9 @@ const ImageSelector = () => {
   
 
   return (
-    <div>
+    <div style={style} >
       <div onClick={() => openFileSelector()}>
-        <BsFillCameraFill color="#1ABCCA" />{" "}
+        <BsFillCameraFill color="#1ABCCA" size='2rem' />
         <button onClick={() => clear()}>Clear</button>
       </div>
       <br />

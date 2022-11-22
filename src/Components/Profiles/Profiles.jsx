@@ -1,6 +1,7 @@
 import React from 'react'
 import ImageSelector from '../ImageSelector/ImageSelector'
-import './Profiles.css'
+import './Profiles.css';
+
 
 const Profiles = () => {
   return (
@@ -9,8 +10,8 @@ const Profiles = () => {
     <div className="profileWrapper">
       <div className="profileGoal">
         <div className='imageCropper'>
-      <ImageSelector/>
-        </div>
+      <ImageSelector style={{position:'absolute', bottom:"0", right:'0px'}}/>
+        </div>  
         <div class="row g-5 w-100">
           <div class="col">
             <label for="Full Name" class="form-label">
@@ -113,7 +114,14 @@ const Profiles = () => {
           </button>
         </div>
       </div>
-    </div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Checked checkbox
+  </label>
+  </input>
+</div>
+    </div> 
   </div>
   )
 }
