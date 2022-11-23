@@ -19,19 +19,3 @@ height: 150px;
 .profileGoal h4 {
   text-align: left;
 }
-.profileBtn{
-    margin-top: 2rem;
-    display: grid;
-    place-items: center;
-}
-.profilebtnSubmit{
-    padding: 0.5rem 5rem;
-    background: #1abcca;
-    border-radius: 10px;
-    border: none;
-    color: #ffffff;
-}
-
-.profilebtnSubmit:hover{
-    background: #04454b;
-}

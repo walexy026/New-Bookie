@@ -1,0 +1,35 @@
+.inputProfileform{
+width: 100%;
+}
+label {
+  display: block;
+  color: #595757;
+  font-weight: 400;
+  font-size: 18px;
+}
+.part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+.profileRadio{
+    display: none;
+}
+.profileBtn{
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+}
+.profilebtnSubmit{
+    padding: 0.5rem 5rem;
+    background: #1abcca;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+}
+
+.profilebtnSubmit:hover{
+    background: #04454b;
+}
