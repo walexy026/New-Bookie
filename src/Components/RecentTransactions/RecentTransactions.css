@@ -6,7 +6,25 @@
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     padding: 20px;
     background-color: #FFFFFF;
+  
   }
+
+  /* .table-bordered>:not(caption)>*>* {
+    border-width: 10px 10px;
+} */
+
+tr{
+  background-color: #E4E8E9;
+  font-weight: 500;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border-color: #FFFFFF;
+  /* border-color: #E4E8E9; */
+  border-style: solid;
+  font-weight: 700;
+  border-width: 10px 0px;
+}
   
   .widgetLgTitle {
     width: 100%;
@@ -46,12 +64,12 @@
     
   }
   .table-bordered>:not(caption)>* {
-    border-width: 2px 0;
-    /* background: white; */
+    border-width: 10px 10px;
+   
 }
   
   .widgetLgUser{
-    display: flex;
+    /* display: flex; */
     /* align-items: center; */
     flex-direction: column;
     font-weight: 600;
@@ -61,7 +79,8 @@
   }
   
   .widgetLgDate,.widgetLgAmount{
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 15px;
   }
   
   .widgetLgButton {

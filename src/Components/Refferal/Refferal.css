@@ -6,6 +6,18 @@
     padding: 20px;
 }
 .referralTable{
-    width: 50%;
+    width: 70%;
     
+}
+
+.referralCodeDiv{
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.codecopy{
+    background: #ACE4E9;
+    border-radius: 5px;
+text-align: right;
 }

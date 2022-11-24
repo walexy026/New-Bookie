@@ -1,11 +1,13 @@
 .savingWrapper{
-    background: #E4E8E9;
+    /* background: #E4E8E9; */
+  background-color: #F5F5F5;;
+
 
 }
 .savingGoal {
   display: grid;
   place-items: center;
-  background-color: #ffffff;
+  background-color: #Ffffff;
   padding: 50px;
   /* text-align: center; */
 }

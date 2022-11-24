@@ -4,85 +4,94 @@ import "./SavingsGoal.css";
 const SavingsGoal = () => {
   return (
     <div className="savingWrapper">
-        <h4>New Goal</h4>
+      <h4>New Goal</h4>
       <div className="savingGoal">
-        <div class="row g-5 w-100">
-          <div class="col">
-            <label for="Goal Name" class="form-label">
-              Goal Name
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="My Grandma House"
-              aria-label="My Grandma House"
-            ></input>
-          </div>
-          <div class="col">
-            <label for="Start Date" class="form-label">
-              Start Date
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="09/09/2002"
-              aria-label="09/09/2002"
-            ></input>
-          </div>
-        </div>
-        <div class="row g-5 w-100">
-          <div class="col">
-            <label for="Amount" class="form-label">
-              Amount
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="NGN 120, 000"
-              aria-label="NGN 120, 000"
-            ></input>
-          </div>
-          <div class="col">
-            <label for="End Date" class="form-label">
-              End Date
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="09/09/2002"
-              aria-label="09/09/2002"
-            ></input>
-          </div>
-        </div>
-        <div class="row g-5 w-100">
-          <div class="col">
-            <label for="Monthly Savings " class="form-label">
-              Monthly Savings{" "}
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="NGN 120, 000"
-              aria-label="NGN 120, 000"
-            ></input>
-          </div>
-          <div class="col">
-            <label for="Payment Method " class="form-label">
-              Payment Method{" "}
-            </label>
+        <form className="inputProfileform">
+          <div className="inputDiv">
+            <div>
+              <label className="profileLabel" htmlFor="GoalName">
+                Goal Name
+              </label>
+              <input
+                className="inputField"
+                type="text"
+                name="GoalName"
+                id=""
+                placeholder="My Grandma House "
+              />
+            </div>
+            <div>
+              <label className="profileLabel" htmlFor="StartDate">
+                Start Date
+              </label>
 
-            <select id="inputState" class="form-select">
-              <option selected>Mastercard </option>
-              <option>Visa</option>
-              <option>Verve</option>
-            </select>
+              <input
+                type="date"
+                className="inputField"
+                name="Start Date"
+                id=""
+                placeholder="0541714416"
+              />
+            </div>
           </div>
-          <div class="col-12 savingsBtn">
-            <button type="submit" class="savingsbtnSubmit">
+          <div className="inputDiv">
+            <div>
+              <label className="profileLabel" htmlFor="Amount">
+                Amount
+              </label>
+              <input
+                type="Amount"
+                className="inputField"
+                name="Amount"
+                id=""
+                placeholder="NGN 120, 000"
+              />
+            </div>
+            <div>
+              <label className="profileLabel" htmlFor=" End Date ">
+                {" "}
+                End Date{" "}
+              </label>
+              <input
+                type="date"
+                className="inputField"
+                name="End Date"
+                id=""
+                placeholder="Guaranty Trust Bank"
+              />
+            </div>
+          </div>
+          <div className="inputDiv">
+            <div>
+              <label className="profileLabel" htmlFor="MonthlySavings ">
+                Monthly Savings{" "}
+              </label>
+              <input
+                type="tel"
+                className="inputField"
+                name="Monthly Savings "
+                id=""
+                placeholder="NGN 120, 000"
+              />
+            </div>
+            <div>
+              <label className="profileLabel" htmlFor="AccountName">
+                Account Name
+              </label>
+              <select id="inputState" className="inputField">
+                <option selected>Mastercard </option>
+                <option>Visa</option>
+                <option>Verve</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="profileBtn">
+            <button type="submit" className="profilebtnSubmit">
               Fund Goal
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
