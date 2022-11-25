@@ -1,0 +1,33 @@
+.settings{
+    background-color: #fff;
+}
+
+.settingsSideBar{
+background: #EFF6F8;
+width: 25vw;
+}
+.listsettings{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    list-style: none;
+    color: #333;
+    /* gap: 1rem; */
+    background: #EFF6F8;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+}
+.listsettings:hover{
+    background: #1ABCCA;
+    color: #fff;
+}
+.acctsetts{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+#pi{
+    font-size: 10px;
+}

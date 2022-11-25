@@ -1,0 +1,19 @@
+.clipboard{
+    width: 100%;
+}
+.clipboardBtn {
+  background-color: #1abcca;
+  border: #1abcca;
+  color: #ffffff;
+  padding: 0.3rem 0.3rem;
+  border-radius: 5px;
+  /* transform: translateX(-40px); */
+}
+.clipboardInput {
+  /* width: 100%; */
+  outline: #1abcca;
+  padding: 0.1rem 0.2rem;
+  border: 2px solid #1abcca;
+  border-radius: 5px;
+  background-color: transparent;
+}

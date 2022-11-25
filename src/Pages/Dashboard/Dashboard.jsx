@@ -7,6 +7,7 @@ import UpperPanel from "../../Components/UpperPanel/UpperPanel";
 import SavingsGoal from "../../Components/Savings/SavingsGoal";
 import Refferal from "../../Components/Refferal/Refferal";
 import Profiles from "../../Components/Profiles/Profiles";
+import Settings from "../../Components/Settings/Settings";
 
 const Dashboard = () => {
   return (
@@ -22,6 +23,7 @@ const Dashboard = () => {
       <SavingsGoal/>
       <Profiles/>
       <Refferal/>
+      <Settings/>
     </div>
   );
 };
