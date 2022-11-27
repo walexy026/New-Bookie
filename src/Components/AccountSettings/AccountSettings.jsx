@@ -9,7 +9,7 @@ const AccountSettings = () => {
         <h5>Personal Information</h5>
         <p>This consist your personal information and other details</p>
         <form action="">
-          <div className="acctform">
+          <div  className="acctform">
             <div>
               <label htmlFor="FullName">Full Name</label>
               <input className="acctInput" type="text" name="FullName" id="" />
@@ -62,10 +62,12 @@ const AccountSettings = () => {
             </div>
           </div>
           <hr />
+<div className="accbtn">
 
-          <button type="reset">Discard Changes </button>
+          <button className='btndiscard'  type="reset">Discard Changes </button>
 
-          <button type="submit">Save Changes </button>
+          <button className='btnsub' type="submit">Save Changes </button>
+</div>
         </form>
       </div>
     </div>
