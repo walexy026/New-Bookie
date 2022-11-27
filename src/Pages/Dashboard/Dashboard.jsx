@@ -9,6 +9,9 @@ import Refferal from "../../Components/Refferal/Refferal";
 import Profiles from "../../Components/Profiles/Profiles";
 import Settings from "../../Components/Settings/Settings";
 import AddFunds from "../../Components/Modals/AddFunds";
+import Deposit from "../../Components/Modals/Deposit";
+import Withdrawal from "../../Components/Modals/Withdrawal";
+import WithdrawalForm from "../../Components/Modals/WithdrawalForm";
 
 const Dashboard = () => {
   return (
@@ -26,6 +29,9 @@ const Dashboard = () => {
       <Refferal/>
       <Settings/>
       <AddFunds/>
+      <Deposit/>
+      <Withdrawal/>
+      <WithdrawalForm/>
     </div>
   );
 };

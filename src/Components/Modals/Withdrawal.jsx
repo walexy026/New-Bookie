@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import {BsCheckCircleFill} from 'react-icons/bs'
 
- const AddFunds =() => {
+ const Withdrawal =() => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,27 +12,21 @@ import Modal from 'react-bootstrap/Modal';
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-      AddFunds
+      Withdrawal
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Add funds</Modal.Title>
+          <Modal.Title>Withdrawal</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <p>Fill the following details</p>
-            <p>Funds deposited are non refundable until it reach its target goal </p>
-            <label htmlFor="Amount ">Amount </label>
-            <input type="number" name="" id="" placeholder='NGN 14,000' />
-           
-            
+           <BsCheckCircleFill fontSize="8rem" />
+            <p>Withdrawal Succesful</p>
             </Modal.Body>
         <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button> */}
+          
           <Button variant="primary" onClick={handleClose}>
-          Proceed
+          Back to Dashboard
           </Button>
         </Modal.Footer>
       </Modal>
@@ -39,4 +34,4 @@ import Modal from 'react-bootstrap/Modal';
   );
 }
 
-export default AddFunds;
+export default Withdrawal;
