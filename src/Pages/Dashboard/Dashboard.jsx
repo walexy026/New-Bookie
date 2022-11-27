@@ -8,6 +8,7 @@ import SavingsGoal from "../../Components/Savings/SavingsGoal";
 import Refferal from "../../Components/Refferal/Refferal";
 import Profiles from "../../Components/Profiles/Profiles";
 import Settings from "../../Components/Settings/Settings";
+import AddFunds from "../../Components/Modals/AddFunds";
 
 const Dashboard = () => {
   return (
@@ -24,6 +25,7 @@ const Dashboard = () => {
       <Profiles/>
       <Refferal/>
       <Settings/>
+      <AddFunds/>
     </div>
   );
 };
