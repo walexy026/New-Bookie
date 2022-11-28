@@ -1,0 +1,88 @@
+.overlay {
+  font-family: "Outfit";
+  width: 100vw;
+  height: 100vh;
+  /* position: fixed; */
+  background-color: rgba(175, 172, 172, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  position: relative;
+  background-color: #fff;
+  height: 400px;
+  width: 400px;
+  transform: scale(1);
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.modalHead {
+  background: #ffffff;
+  border-bottom: 5px solid rgb(250, 249, 249);
+  box-shadow: 2px 4px 4px rgba(250, 249, 249, 0.08);
+  border-radius: 12px 12px 0px 0p;
+}
+
+.modalHead > h5 {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.modalInput {
+  border-color: rgb(226, 221, 221);
+  border-radius: 5px;
+  padding: 0.2rem 0.9rem 0.2rem 0.1rem;
+}
+.modalBody {
+  padding: 2rem;
+}
+.btnmodal {
+  background: #1abcca;
+  border-radius: 10px;
+  border: #1abcca;
+  padding: 0.3rem 5rem;
+  color: #fff;
+  /* position: absolute;
+  top: 70%;
+  left: 0%; */
+  box-shadow: 2px 4px 4px rgba(250, 249, 249, 0.08);
+}
+.check{
+    text-align: center;
+}
+.btnModalDiv{
+    text-align: center;
+}
+.wtdform{
+    height: 550px;
+}
+.btnModalFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    /* justify-content: space-around; */
+}
+.btnmodalW{
+    background: #1abcca;
+    border-radius: 10px;
+    border: #1abcca;
+    padding: 0.3rem 1rem;
+    color: #fff;
+    width: 200px;
+}
+.btnModalGreen{
+    background: #17A17C;
+}
+.btnModalBrown{
+background-color:#D36135;
+}

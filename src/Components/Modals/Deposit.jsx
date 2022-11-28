@@ -1,39 +1,35 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import {BsCheckCircleFill} from 'react-icons/bs'
+import React from "react";
+import { BsCheckCircleFill } from "react-icons/bs";
+import { GrFormClose } from "react-icons/gr";
+import "./Modals.css";
 
- const Deposit =() => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+const Deposit = ({ open, onClose }) => {
+  if (!open) return null;
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-      Deposit
-      </Button>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Deposit</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-           <BsCheckCircleFill fontSize="8rem" />
-            <p>Funds  Added Sucessfully</p>
-            </Modal.Body>
-        <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button> */}
-          <Button variant="primary" onClick={handleClose}>
-          Back to Dashboard
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <div onClick={onClose} className="overlay">
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          className="modalContainer"
+        >
+          <div className="modalHead">
+            <h5>Deposit</h5>
+            <GrFormClose onClick={onClose} className="closeModal" />
+          </div>
+          <div className="modalBody check">
+            <BsCheckCircleFill fontSize="8rem" color=" #17A17C" />
+            <h4>Funds Added Sucessfully</h4>
+          </div>
+          <div className='btnModalDiv'>
+          <button className="btnmodal"> Back to Dashboard</button>
+          </div>
+        </div>
+      </div>
     </>
   );
-}
+};
 
 export default Deposit;

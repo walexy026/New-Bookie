@@ -1,36 +1,35 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import React from 'react';
 import {BsCheckCircleFill} from 'react-icons/bs'
+import { GrFormClose } from "react-icons/gr";
+import './Modals.css'
 
- const Withdrawal =() => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+ const Withdrawal =({open, onClose}) => {
+  if (!open) return null
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-      Withdrawal
-      </Button>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Withdrawal</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-           <BsCheckCircleFill fontSize="8rem" />
-            <p>Withdrawal Succesful</p>
-            </Modal.Body>
-        <Modal.Footer>
-          
-          <Button variant="primary" onClick={handleClose}>
-          Back to Dashboard
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <div onClick={onClose} className="overlay">
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          className="modalContainer"
+        >
+          <div className="modalHead">
+            <h5> Withdrawal</h5>
+            <GrFormClose onClick={onClose} className="closeModal" />
+          </div>
+          <div className="modalBody check">
+            <BsCheckCircleFill fontSize="8rem" color=" #17A17C" />
+            <h4>Withdrawal Succesful</h4>
+          </div>
+          <div className='btnModalDiv'>
+          <button className="btnmodal"> Back to Dashboard</button>
+          </div>
+        </div>
+      </div>
     </>
+  
   );
 }
 
