@@ -64,7 +64,7 @@ const AddFunds = ({ open, onClose }) => {
           <p>
             Funds deposited are non refundable until it reach its target goal{" "}
           </p>
-          <div>
+          <div className="addInput">
             <label htmlFor="Amount ">Amount </label>
             <input
               className="modalInput"

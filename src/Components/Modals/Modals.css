@@ -45,6 +45,13 @@
 .modalBody {
   padding: 2rem;
 }
+.modalOtp{
+    height: fit-content;
+    padding-bottom: 1rem;
+}
+.addInput{
+    margin-bottom: 3rem;
+}
 .btnmodal {
   background: #1abcca;
   border-radius: 10px;
@@ -85,4 +92,48 @@
 }
 .btnModalBrown{
 background-color:#D36135;
+}
+.modOTP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.modOTP + b{
+    font-size: 12px;
+    padding-left: 8rem;
+    /* display: none; */
+}
+.modalCVV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cvv{
+    width: 60%;
+}
+.react-tabs__tab--selected {
+    background: #1ABCCA !important;
+    border-color: #aaa;
+    color: #fff !important;
+    border-radius: 5px 5px 0 0;
+}
+.react-tabs__tab {
+     display: inline-block;
+    border: 1px solid #1ABCCA !important ;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer; 
+    border-radius: 5px;
+    margin-right: 1rem !important;
+}
+.react-tabs__tab-list {
+    border-bottom: 0px solid #aaa !important;
+    margin: 0 0 10px;
+    padding: 0;
 }
