@@ -1,12 +1,14 @@
 .profileWrapper{
     background: #E4E8E9;
+    margin: 10vh;
+   
 
 }
 .profileGoal {
   display: grid;
   place-items: center;
   background-color: #ffffff;
-  padding: 50px;
+  padding:20px 50px;
   /* text-align: center; */
 }
 .imageCropper{

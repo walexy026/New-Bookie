@@ -9,7 +9,7 @@ const SavingsGoal = () => {
         <form className="inputProfileform">
           <div className="inputDiv">
             <div>
-              <label className="profileLabel" htmlFor="GoalName">
+              <label className="savingsLabel" htmlFor="GoalName">
                 Goal Name
               </label>
               <input
@@ -21,7 +21,7 @@ const SavingsGoal = () => {
               />
             </div>
             <div>
-              <label className="profileLabel" htmlFor="StartDate">
+              <label className="savingsLabel" htmlFor="StartDate">
                 Start Date
               </label>
 
@@ -36,7 +36,7 @@ const SavingsGoal = () => {
           </div>
           <div className="inputDiv">
             <div>
-              <label className="profileLabel" htmlFor="Amount">
+              <label className="savingsLabel" htmlFor="Amount">
                 Amount
               </label>
               <input
@@ -48,7 +48,7 @@ const SavingsGoal = () => {
               />
             </div>
             <div>
-              <label className="profileLabel" htmlFor=" End Date ">
+              <label className="savingsLabel" htmlFor=" End Date ">
                 {" "}
                 End Date{" "}
               </label>
@@ -63,7 +63,7 @@ const SavingsGoal = () => {
           </div>
           <div className="inputDiv">
             <div>
-              <label className="profileLabel" htmlFor="MonthlySavings ">
+              <label className="savingsLabel" htmlFor="MonthlySavings ">
                 Monthly Savings{" "}
               </label>
               <input
@@ -75,7 +75,7 @@ const SavingsGoal = () => {
               />
             </div>
             <div>
-              <label className="profileLabel" htmlFor="AccountName">
+              <label className="savingsLabel" htmlFor="AccountName">
                 Account Name
               </label>
               <select id="inputState" className="inputField">
@@ -86,8 +86,8 @@ const SavingsGoal = () => {
             </div>
           </div>
 
-          <div className="profileBtn">
-            <button type="submit" className="profilebtnSubmit">
+          <div className="savingsBtn">
+            <button type="submit" className="savingsbtnSubmit">
               Fund Goal
             </button>
           </div>

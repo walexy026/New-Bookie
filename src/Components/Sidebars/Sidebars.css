@@ -5,15 +5,16 @@
   flex: 1;
   height: calc(100vh - 50px);
   max-width: 250px;
-  background-color: #1abcca;
-  color: #ffffff;
+  background-color: #ffffff;
+  /* background-color: #1abcca; */
+  color: #595757;
   position: sticky;
-  top: 50px;
+  top: 45px;
 }
 
 .sidebarWrapper {
   padding: 20px 0px 10px 20px;
-  color: #555;
+  color: red;
 }
 
 .sidebarMenu {
@@ -27,19 +28,31 @@
   color: #595757;
 }
 
-.sidebarList {
+.sidebarList  {
   list-style: none;
   padding: 5px;
-  color: #ffffff;
+  color: #595757;
+
+}
+a{
+ 
+  /* padding: 5px; */
+  text-decoration: none !important;
+  color: #595757 !important;
+  cursor: pointer;
 }
 
 .sidebarListItem {
   padding: 5px;
   cursor: pointer;
+  /* display: none; */
   display: flex;
   align-items: center;
   border-radius: 1px;
   
+}
+.n{
+  display: block;
 }
 .LogOut {
   position: absolute;
@@ -54,6 +67,6 @@
 }
 .sidebarListItem.active,
 .sidebarListItem:hover {
-  background-color: rgb(240, 240, 255);
+  background-color: #1abcca;
   color: #595757;
 }

@@ -11,57 +11,57 @@ const AccountSettings = () => {
         <form action="">
           <div  className="acctform">
             <div>
-              <label htmlFor="FullName">Full Name</label>
+              <label className="la" htmlFor="FullName">Full Name</label>
               <input className="acctInput" type="text" name="FullName" id="" />
             </div>
             <div>
-              <label htmlFor="Email">Email</label>
+              <label className="la"  htmlFor="Email">Email</label>
               <input className="acctInput" type="email" name="Email" id="" />
             </div>
           </div>
 
           <div>
-            <label htmlFor="PhoneNumber">Phone Number</label>
+            <label className="la" htmlFor="PhoneNumber">Phone Number</label>
             <input className="acctInput" type="tel" name="PhoneNumber" id="" />
           </div>
           <br />
-          <hr />
+          <hr className="hb" />
 
           <div>
             <h5>Notifications</h5>
             <p>Choose type of notification you want to recieve</p>
             <div className="acctcheckbox">
               <div>
-                <label htmlFor="">
+                <label className="la" htmlFor="">
                   <input type="checkbox" name="" id="" value="" />Withdrawal
                   Activity
                 </label>
-                <label htmlFor="">
+                <label className="la" htmlFor="">
                   <input type="checkbox" name="" id="" value="" />
                   Weekly Report
                 </label>
-                <label htmlFor="">
+                <label className="la" htmlFor="">
                   <input type="checkbox" name="" id="" value="" /> Payment
                   Success
                 </label>
               </div>
               <div>
-                <label htmlFor="">
+                <label className="la" htmlFor="">
                   <input type="checkbox" name="" id="" value="" /> Password
                   Change
                 </label>
-                <label htmlFor="">
+                <label className="la" htmlFor="">
                   <input type="checkbox" name="" id="" value="" />
                   Top Up Success
                 </label>
-                <label htmlFor="">
+                <label className="la" htmlFor="">
                   <input type="checkbox" name="" id="" value="" /> Send Money
                   Success
                 </label>
               </div>
             </div>
           </div>
-          <hr />
+          <hr  className="hb"/>
 <div className="accbtn">
 
           <button className='btndiscard'  type="reset">Discard Changes </button>

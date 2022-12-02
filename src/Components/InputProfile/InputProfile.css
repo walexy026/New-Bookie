@@ -26,6 +26,11 @@ display: none;
     border-radius: 10px;
     border:4px solid #faf6f6;
 }
+@media only screen and (max-width:768px) {
+    .inputField{
+        width: 300px;
+    }
+}
 .inputField:focus{
     color: #1abcca;
     
@@ -42,7 +47,7 @@ display: none;
     place-items: center;
 }
 .profilebtnSubmit{
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 8rem;
     background: #1abcca;
     border-radius: 10px;
     border: none;
@@ -51,4 +56,5 @@ display: none;
 
 .profilebtnSubmit:hover{
     background: #04454b;
+    background: #070679;
 }

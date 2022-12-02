@@ -1,8 +1,13 @@
 import React from 'react'
+import { FeaturedInfo } from '../FeaturedInfo/FeaturedInfo'
+import RecentTransactions from '../RecentTransactions/RecentTransactions'
 
 const Overview = () => {
   return (
-    <div>Overview</div>
+    <div>Overview
+      <FeaturedInfo/>
+      <RecentTransactions/>
+    </div>
   )
 }
 

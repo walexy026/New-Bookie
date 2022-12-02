@@ -6,10 +6,12 @@ import "./Profiles.css";
 const Profiles = () => {
   return (
     <div>
-      <h4>Profile</h4>
+     
       <div className="profileWrapper">
+      <h4>Profile</h4>
         <div className="profileGoal">
           <div className="imageCropper">
+           
             <ImageSelector
               style={{ position: "absolute", bottom: "0", right: "0px" }}
             />

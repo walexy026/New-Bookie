@@ -3,6 +3,7 @@ import "./RecentTransactions.css";
 import {Table} from 'react-bootstrap';
 import Refferal from "../Refferal/Refferal";
 
+
 const RecentTransactions = () => {
   const Button = ({ type }) => {
     return <button className={"widgetLgButton " + type}> {type} </button>;
@@ -60,7 +61,7 @@ const RecentTransactions = () => {
       </tbody>
     </Table>
     </div>
-      <Refferal/>
+      {/* <Refferal/> */}
     </div>
   );
 };

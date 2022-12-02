@@ -1,9 +1,9 @@
 .dashboard{
     background: #E4E8E9;
-    /* display: grid; */
-    /* grid-template-columns:
-  repeat(3, 1fr); */
-  /* grid-template-columns: minmax(100px, 1fr) 2fr; */
+    display: grid;
+     /* grid-template-columns:
+  repeat(3, 2fr); 
+   grid-template-columns: (1fr, 1fr) 2fr;  */
 }
 .dashboardSegment{
     display: flex;

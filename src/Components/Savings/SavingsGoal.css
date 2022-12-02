@@ -1,5 +1,7 @@
 .savingWrapper{
     /* background: #E4E8E9; */
+    margin-top: 50px;
+    margin-left: 30px;
   background-color: #F5F5F5;;
 
 
@@ -8,8 +10,16 @@
   display: grid;
   place-items: center;
   background-color: #Ffffff;
-  padding: 50px;
+  /* width: 150%; */
+  /* padding: 50px; */
   /* text-align: center; */
+}
+.savingsLabel {
+  display: block;
+  color: #595757;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 15px;
 }
 .savingGoal h4 {
   text-align: left;
@@ -17,6 +27,7 @@
 .savingsBtn {
   display: grid;
   place-items: center;
+  margin-bottom: 2rem;
 }
 .savingsbtnSubmit {
   background: #1abcca;

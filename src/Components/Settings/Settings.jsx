@@ -3,7 +3,8 @@ import "./Settings.css";
 import { BsChevronRight } from "react-icons/bs";
 import { Icon } from "@iconify/react";
 import AccountSettings from "../AccountSettings/AccountSettings";
-import SecuritySettings from "../SecuritySettings/SecuritySettings";
+import {Link } from 'react-router-dom'
+
 const Settings = () => {
   return (
     <Fragment>
@@ -15,16 +16,17 @@ const Settings = () => {
         <div className="settings">
           <div className="settingsSideBar">
             <ul>
-              <li className="listsettings">
-                <Icon
+              <li className="listsettings"> 
+               <Icon
                   icon="icon-park:me"
                   style={{ fontSize: "2rem", marginRight: "0.5rem" }}
                 />
                 <div className="acctsetts" style={{ marginRight: "3rem" }}>
                   <b> Account settings </b>
-                  <b id="pi">Personal information, Notification</b>
+                  <b id="pi">Personal information, Notification</b> 
                 </div>
                 <BsChevronRight />
+                
               </li>
               <li className="listsettings">
                 <Icon
@@ -65,7 +67,7 @@ const Settings = () => {
           </div>
         </div>
         <AccountSettings />
-        <SecuritySettings />
+        
       </div>
     </Fragment>
   );

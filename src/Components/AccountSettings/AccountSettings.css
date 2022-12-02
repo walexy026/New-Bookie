@@ -1,6 +1,8 @@
 .AccountSettings {
   padding-left: 3rem;
   font-family: "Outfit";
+  background-color: #FFFFFF;
+  /* display: none; */
 }
 
 .AccountSettings h5 {
@@ -10,9 +12,10 @@
   color: #595757;
 }
 
-label{
+.la{
     display: block;
 }
+
 p {
   font-weight: 400;
   font-size: 16px;
@@ -34,7 +37,7 @@ p {
     opacity: 0.4;
     /* border: red; */
 }
-hr{
+.hb{
     border: 2px solid #595757;
 
 }
