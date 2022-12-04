@@ -8,7 +8,7 @@ const SavingsGoal = ({open, onClose}) => {
     <div onClick={onClose} className="overlay">
     <div  onClick={(e) => {
             e.stopPropagation();
-          }} className="savingWrapper">
+          }} className="savingWrapper modalContainer">
       <h4>New Goal</h4>
      
             <GrFormClose onClick={onClose} className="closeModal" />

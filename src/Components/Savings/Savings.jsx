@@ -10,12 +10,12 @@ const Savings = () => {
   return (
     <div>
         <FeaturedInfo/>
+        <SavingsGoal open={openModal} onClose={()=> setOpenModal(false)}/>
       <div className="savingsContainer">
         <div className="savingsheader">
 
         <h6>Here are your savings Goal </h6>   
       <button onClick={()=>setOpenModal(true)} className="createGoal">Create a new Goal</button>    
-      <SavingsGoal open={openModal} onClose={()=> setOpenModal(false)}/>
         </div>
         <table className='ta' >
           <thead>
