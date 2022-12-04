@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Savings from "./Components/Savings/SavingsGoal";
+import Savings from "./Components/Savings/Savings";
 import UpperPanel from "./Components/UpperPanel/UpperPanel";
 import Sidebars from "./Components/Sidebars/Sidebars";
 import Settings from "./Components/Settings/Settings";

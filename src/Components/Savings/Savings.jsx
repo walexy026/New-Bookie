@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { FeaturedInfo } from "../FeaturedInfo/FeaturedInfo";
 import ProgressBar from "./ProgressBar";
+import SavingsGoal from "./SavingsGoal";
 import './SavingsGoal.css'
 
 const Savings = () => {
+    const [openModal, setOpenModal] = useState(false);
+
   return (
     <div>
         <FeaturedInfo/>
@@ -11,7 +14,8 @@ const Savings = () => {
         <div className="savingsheader">
 
         <h6>Here are your savings Goal </h6>   
-      <button className="createGoal">Create a new Goal</button>    
+      <button onClick={()=>setOpenModal(true)} className="createGoal">Create a new Goal</button>    
+      <SavingsGoal open={openModal} onClose={()=> setOpenModal(false)}/>
         </div>
         <table className='ta' >
           <thead>

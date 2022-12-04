@@ -1,13 +1,19 @@
 import React from "react";
-import Savings from "./Savings";
 import "./SavingsGoal.css";
+import { GrFormClose } from "react-icons/gr";
 
-const SavingsGoal = () => {
+const SavingsGoal = ({open, onClose}) => {
+  if (!open) return null
   return (
-    <div className="savingWrapper">
+    <div onClick={onClose} className="overlay">
+    <div  onClick={(e) => {
+            e.stopPropagation();
+          }} className="savingWrapper">
       <h4>New Goal</h4>
      
+            <GrFormClose onClick={onClose} className="closeModal" />
       <div className="savingGoal">
+      
         <form className="inputProfileform">
           <div className="inputDiv">
             <div>
@@ -95,8 +101,7 @@ const SavingsGoal = () => {
           </div>
         </form>
       </div>
-     
-      <Savings/>
+     </div>
     </div>
   );
 };
