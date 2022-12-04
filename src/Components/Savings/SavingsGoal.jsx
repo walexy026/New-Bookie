@@ -1,10 +1,12 @@
 import React from "react";
+import Savings from "./Savings";
 import "./SavingsGoal.css";
 
 const SavingsGoal = () => {
   return (
     <div className="savingWrapper">
       <h4>New Goal</h4>
+     
       <div className="savingGoal">
         <form className="inputProfileform">
           <div className="inputDiv">
@@ -93,6 +95,8 @@ const SavingsGoal = () => {
           </div>
         </form>
       </div>
+     
+      <Savings/>
     </div>
   );
 };

@@ -1,15 +1,13 @@
-.savingWrapper{
-    /* background: #E4E8E9; */
-    margin-top: 50px;
-    margin-left: 30px;
-  background-color: #F5F5F5;;
-
-
+.savingWrapper {
+  /* background: #E4E8E9; */
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: #f5f5f5;
 }
 .savingGoal {
   display: grid;
   place-items: center;
-  background-color: #Ffffff;
+  background-color: #ffffff;
   /* width: 150%; */
   /* padding: 50px; */
   /* text-align: center; */
@@ -39,4 +37,72 @@
 .savingsbtnSubmit:hover {
   background: #04454b;
 }
-
+.savingsheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 1rem;
+}
+.createGoal {
+  background: #1abcca;
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  color: #f5f5f5;
+  border: none;
+}
+.tableRow {
+  background-color: #fff;
+  font-size: 12px;
+  /* width: 200px; */
+  /* padding: 3rem; */
+}
+.toptable {
+  background-color: #fff;
+}
+.firstRow {
+  color: #1abcca;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.smallFont {
+  font-size: 9px;
+}
+.startDateGreen {
+  color: #05c953;
+}
+.active {
+  background: rgba(5, 201, 83, 0.27);
+  border-radius: 10px;
+  text-align: center;
+  color: #05c953;
+  border: none;
+  padding: 5px 10px;
+}
+.ta {
+  /* padding: 3rem; */
+  width: 370px;
+  margin: 1rem;
+  border-radius: 50px;
+  color: #595757;
+}
+.tdRightAlign {
+  padding-left: 1rem;
+}
+.tdLeftalign {
+  text-align: right;
+  padding-right: 1rem;
+}
+.fundGoal {
+  background: #1abcca;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  color: #595757;
+}
+.liquidate {
+  background: #d36135;
+  border-radius: 10px;
+  color: #f5f5f5;
+  border: none;
+  padding: 5px 10px;
+}
