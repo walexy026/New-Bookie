@@ -1,0 +1,61 @@
+.book-section {
+    padding-bottom: 2rem;
+}
+
+.book-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 3rem;
+   
+}
+.bookImage-container{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    width: 366px;
+    height: 364px;
+}
+.description-price-container{
+    display: flex;
+    justify-content: space-between;
+}
+.book-items {
+    width: 366.2px;
+    height: 252px;
+    margin: auto;
+    padding: 1.5rem 0;
+}
+.book-section-title {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #595757;
+   
+}
+.book-section-title-container {
+    padding-left: 1.5rem;
+}
+.book-description {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 23px;
+    color: #595757;
+}
+.book-price-description{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 23px;
+    color: #595757;
+    padding-right: 1rem;
+}
+.star-icon {
+    color: #D36135;
+}
