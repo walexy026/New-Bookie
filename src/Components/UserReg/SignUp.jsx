@@ -19,8 +19,8 @@ const SignUp = () => {
           <h5>Sign up </h5>
           <p>Secure an acoount with Bookie</p>
           <div>
-            <label htmlFor="email"></label>
-            <label htmlFor="email">Email</label>
+            
+            <label className='labelSignup' htmlFor="email">Email</label >
             <input
               name="email"
               type="email"
@@ -31,7 +31,7 @@ const SignUp = () => {
             />
             {errors.email ? <span> {errors.email}</span> : null}
 
-            <label htmlFor="phone-input">Phone Number</label>
+            <label className='labelSignup' htmlFor="phone-input">Phone Number</label>
             <input
               type="tel"
               name="phoneNumber"

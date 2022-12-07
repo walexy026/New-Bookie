@@ -1,4 +1,5 @@
 import React from "react";
+import ReactOtpInput from "../UserReg/ReactOtpInput";
 import "./SecuritySettings.css";
 
 const SecuritySettings = () => {
@@ -55,10 +56,11 @@ const SecuritySettings = () => {
             <p>Enter Code</p>
             <hr />
             <div className="authtokendiv">
+              <ReactOtpInput/>
+              {/* <input className="authtoken" type="text" />
               <input className="authtoken" type="text" />
               <input className="authtoken" type="text" />
-              <input className="authtoken" type="text" />
-              <input className="authtoken" type="text" />
+              <input className="authtoken" type="text" /> */}
             </div>
             <div className="accbtn">
               <button className="btndiscard" type="reset">

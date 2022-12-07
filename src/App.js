@@ -11,7 +11,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Overview from "./Components/Overview/Overview";
 import SignUp from "./Components/UserReg/SignUp";
 import SettingsLayout from "./layout/SettingsLayout";
-import ValidateOtp from "./Components/UserReg/ValidateOtp";
+import ReactOtpInput from "./Components/UserReg/ReactOtpInput";
 function App() {
   return (
     <BrowserRouter>
@@ -32,7 +32,7 @@ function App() {
               <Route path="/Refferal" element={<Refferal />} />
               <Route path="/Wallet" element={<Wallet />} />
               <Route path="/SignUp" element={<SignUp />} />
-              <Route path="/validateotp" element={<ValidateOtp />} />
+              <Route path="/otp" element={<ReactOtpInput />} />
               
             </Routes>
           </div>

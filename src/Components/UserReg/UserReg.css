@@ -43,6 +43,7 @@ color: #595757;
   border-radius: 10px;
   color: #ffffff;
   padding: 0.5rem 3rem;
+  margin-top: 1rem;
 }
 .btnsignUpCON {
   display: grid;
@@ -62,7 +63,7 @@ color: #595757;
     
 }
 .labelSignup {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: block;
 }
 .pwdInput {
@@ -75,6 +76,8 @@ color: #595757;
   display: grid;
   place-items: center;
   text-align: center;
+  background-color: #fff;
+  padding-bottom: 10rem;
 }
 .otpDiv  h5{
   font-family: 'Outfit';
@@ -91,4 +94,16 @@ color: #fff;
 border-radius: 10px;
 margin-top: 1rem;
 padding: 0.4rem 5.3rem;
+}
+.otp{
+  display: grid;
+  place-items: center;
+}
+.otpinput{
+  background-color: #fff;
+  width: 2.5rem !important;
+  height: 2.5rem;
+  border-radius: 5px;
+  border:2px solid #1ABCCA ;
+  margin-right: 0.5rem;
 }

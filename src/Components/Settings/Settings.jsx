@@ -56,7 +56,7 @@ const Settings = () => {
                   style={{ fontSize: "2rem", marginRight: "0.5rem" }}
                 />{" "}
                 <div className="acctsetts" style={{ marginRight: "3rem" }}>
-                  <b>Appaerances</b>
+                  <b>Appearances</b>
                   <b id="pi">Dark and Light Mode , Front Size </b>{" "}
                 </div>
                 <div>
