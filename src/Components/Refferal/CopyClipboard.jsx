@@ -15,7 +15,7 @@ const  CopyClipboard = () => {
         <input className="clipboardInput"  type="text" value={isCopied} onChange={(e)=>setIsCopied (e.target.value)} readOnly />
         
         <button className="clipboardBtn" onClick={handleCopyClick} >
-          <span>{isCopied ? 'Copied!' : 'Copy'}</span>
+          <span>{isCopied ? 'Copy!' : 'Copied'}</span>
         </button>
         <div>
         {/* <CopyToClipboard text="got it" onCopy={() => "Copied"}>

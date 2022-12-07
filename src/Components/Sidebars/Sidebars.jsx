@@ -22,7 +22,7 @@ const Sidebars = () => {
           <li className="sidebarListItem "><Link to='/wallet' >  <Icon icon="ion:wallet" fontSize='1.5rem'  style={{marginRight:'1.5rem'}}/> Wallets</Link> </li>
           <li className="sidebarListItem "><Link to='/Refferal'>  <BiUserPlus fontSize='1.5rem' style={{marginRight:'1.5rem'}}/> Refferal </Link> </li>
           <li className="sidebarListItem "><Link to='/Profiles'> <Icon icon="pajamas:profile" fontSize='1.5rem' style={{marginRight:'1.5rem'}}/> Profile </Link> </li>
-          <li className="sidebarListItem "><Link to='/Settings'> <Icon icon="material-symbols:settings-rounded" fontSize='1.5rem' style={{marginRight:'1.5rem'}} />  Settings </Link> </li>
+          <li className="sidebarListItem "><Link to='/settings'> <Icon icon="material-symbols:settings-rounded" fontSize='1.5rem' style={{marginRight:'1.5rem'}} />  Settings </Link> </li>
           <li className="sidebarListItem LogOut"> <FiLogOut fontSize='1.5rem' style={{marginRight:'1.0rem'}}/> Log out </li>
           </ul>
         </div>

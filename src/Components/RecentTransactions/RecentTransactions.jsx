@@ -31,7 +31,7 @@ const RecentTransactions = () => {
               <span className="widgetSmName">Added to my funds</span>
             </td>
             <td className="widgetLgDate">NGN 450,00 </td>
-            <td className="widgetLgAmount">Nov 8,2023</td>
+            <td className="widgetLgAmount">8 Nov 2023</td>
             <td className="widgetLgStatus">
               <Button type="Deposit" />
             </td>
@@ -41,8 +41,8 @@ const RecentTransactions = () => {
               <span className="widgetLgName">Mobile Transfer </span>
               <span className="widgetSmName">Added to my funds</span>
             </td>
+            <td className="widgetLgAmount">NGN 450,00 </td>
             <td className="widgetLgDate">12 May 2022</td>
-            <td className="widgetLgAmount">$1202.00</td>
             <td className="widgetLgStatus">
               <Button type="Withdrawal" />
             </td>
@@ -52,8 +52,8 @@ const RecentTransactions = () => {
         <span className="widgetLgName">Mobile Transfer </span>
               <span className="widgetSmName">Added to my funds</span>
             </td>
+            <td className="widgetLgAmount">NGN 450,00 </td>
             <td className="widgetLgDate">12 May 2022</td>
-            <td className="widgetLgAmount">$1202.00</td>
             <td className="widgetLgStatus">
               <Button type="Withdrawal" />
             </td>

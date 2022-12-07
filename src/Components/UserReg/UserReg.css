@@ -1,0 +1,94 @@
+.signUpContainer {
+  font-family: outfit;
+  margin-top: 10vh;
+  display: grid;
+  place-items: center;
+  height: 500px;
+  /* width: 300px; */
+  /* background-color: rgb(243, 242, 242); */
+}
+.logoDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.user-info-form {
+  display: grid;
+  place-items: center;
+  width: 350px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.logoDiv > h4 {
+  font-family: "Bree Serif";
+  color: #595757;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  padding-top: 2rem;
+}
+.user-info-form > h5{
+font-weight: 700;
+font-size: 24px;
+/* line-height: 30px; */
+color: #595757;
+
+}
+.btnSignUp {
+  background: #1abcca;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 0.5rem 3rem;
+}
+.btnsignUpCON {
+  display: grid;
+  place-items: center;
+}
+.errorMsg, .error-message {
+  max-width: 350px;
+  color: #f21e08;
+  border: 2px solid red;
+  padding: 2px 0;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.correct-message{
+    color: green;
+    
+}
+.labelSignup {
+  margin-top: 1rem;
+  display: block;
+}
+.pwdInput {
+  width: -webkit-fill-available;
+  border-radius: 5px;
+}
+.otpDiv{
+  margin-top: 10vh;
+  font-family: 'Outfit';
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.otpDiv  h5{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+color: #595757;
+}
+.otpsubmit{
+  background: #1ABCCA;
+border: 1px solid #EEEEEE;
+color: #fff;
+border-radius: 10px;
+margin-top: 1rem;
+padding: 0.4rem 5.3rem;
+}
