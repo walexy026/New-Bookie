@@ -1,0 +1,40 @@
+.book-section-heading {
+    text-align: center;
+    margin: 2.5rem;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #595757;
+}
+
+.book-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 2.5rem;
+
+}
+
+.book-section-btn {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    background: #FFFFFF;
+    color: #1ABCCA;
+    border: 1px solid #1ABCCA;
+    border-radius: 5px;
+    width: 10.5rem;
+    min-height: 2.8rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.book-section-btn:hover {
+    background: #1ABCCA;
+    color: #ffff;
+}
