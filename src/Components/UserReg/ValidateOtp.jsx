@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./UserReg.css";
-import Logo from "../../Assets/bookieLogo.svg";
-import ReactOtpInput from "./ReactOtpInput";
-import { useState } from "react";
+import OtpInput from "react18-input-otp";
+
+
+
 
  const ValidateOtp = () => {
 
@@ -13,27 +14,26 @@ const handleChange = (enteredOtp) => {
   // console.log(enteredOtp);
   
 };
-const handleSubmit = (value) =>{
 
-  console.log((value))
-}
+
 
   return (
-    <div className="otpDiv">
-      <span className="logoDiv">
-        <img src={Logo} alt="Logo" />
-        <h4>Bookie</h4>{" "}
-      </span>
-      <div>
-        <h5>Verification Code </h5>
-        <p>Enter the verification Code sent to your phone </p>
-
-        <form className="otp" action="" onSubmit={handleSubmit} >
-          <ReactOtpInput onSubmit={handleSubmit}  onChange={handleChange} />
-          <button className="otpsubmit">Login</button>
+    <div>
+     
+        <form className="otp" action=""  >
+        <OtpInput
+            value={otp}
+            onChange={handleChange}
+            onSubmit={true}
+            numInputs={4}
+            separator={<span> </span>}
+            inputStyle={"otpinput"}
+            isInputNum={true}
+          />
+          
         </form>
       </div>
-    </div>
+    
   );
 };
 

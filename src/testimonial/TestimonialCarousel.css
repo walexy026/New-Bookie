@@ -1,0 +1,129 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.test {
+    text-align: center;
+    /* padding-top: 4rem; */
+    width: 50%;
+    display: flex;
+    margin: 5rem auto;
+    flex-direction: column;
+}
+.testimonial-section-heading{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #595757;
+}
+
+@media only screen and (max-width:768px) {
+    .test {
+        width: 100%;
+    }
+}
+
+.test p {
+    margin-top: 3rem;
+}
+
+.test b {
+    margin-top: 2rem;
+}
+
+.slide {
+    background: #1abcca;
+    width: 15rem;
+    text-align: center;
+    transform: scale(0.5);
+    margin: 0 auto;
+    transition: transform 300ms;
+    opacity: 0.5;
+    border-radius: 10px;
+    display: block;
+    padding: 0.5rem;
+}
+
+.activeslide {
+    display: block;
+    transform: scale(0.8);
+    opacity: 1;
+    border-radius: 5%;
+    min-height: 350px;
+}
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.arrow svg {
+    transition: color 300ms;
+}
+
+.arrow svg:hover {
+    color: aqua;
+}
+
+.next {
+    right: 0%;
+    top: 50%;
+}
+
+.prev {
+    left: 0%;
+    top: 50%;
+}
+
+.slick-slide img {
+    display: inherit;
+    transform: translateY(-50px);
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 18px;
+    height: 3px;
+    padding: 2px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background-color: #1abcca;
+}
+
+.slick-dots li button:before {
+    font-family: "slick";
+    font-size: 2px;
+    line-height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    /* content: ' '; */
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: #1abcca;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: white;
+}
+
+/* .testImage {
+  position: absolute;
+  top: -60px;
+  right: 115px;
+  z-index: 100;
+  margin-left: 5rem;
+} */

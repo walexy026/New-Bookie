@@ -2,10 +2,20 @@ import React, { Fragment } from "react";
 import "./Settings.css";
 import { BsChevronRight } from "react-icons/bs";
 import { Icon } from "@iconify/react";
-import AccountSettings from "../AccountSettings/AccountSettings";
+// import Settings from '../Settings/index'
+// import AccountSettings from "../AccountSettings/AccountSettings";
 import {Link } from 'react-router-dom'
 
 const Settings = () => {
+const settingsList = {
+  icon:'',
+  title:'',
+  subtitle:'',
+  
+
+}
+
+
   return (
     <Fragment>
       <div className="settingsPanel">
@@ -16,7 +26,7 @@ const Settings = () => {
         <div className="settings">
           <div className="settingsSideBar">
             <ul>
-              <li className="listsettings"> 
+            <Link to={"/settings/accountsettings"}>  <li className="listsettings"> 
                <Icon
                   icon="icon-park:me"
                   style={{ fontSize: "2rem", marginRight: "0.5rem" }}
@@ -27,8 +37,8 @@ const Settings = () => {
                 </div>
                 <BsChevronRight />
                 
-              </li>
-              <li className="listsettings">
+              </li></Link>
+          <Link to ={'/settings/securitysettings'}><li className="listsettings">
                 <Icon
                   icon="mdi:security-lock-outline"
                   style={{ fontSize: "2rem", marginRight: "0.5rem" }}
@@ -38,7 +48,7 @@ const Settings = () => {
                   <b id="pi">Change password ,Authemtication Number</b>
                 </div>
                 <BsChevronRight />
-              </li>
+              </li></Link>
               <li className="listsettings">
                 <Icon
                   icon="icon-park:me"
@@ -66,8 +76,8 @@ const Settings = () => {
             </ul>
           </div>
         </div>
-        <AccountSettings />
-        
+        {/* <AccountSettings /> */}
+        {/* <Settings/> */}
       </div>
     </Fragment>
   );

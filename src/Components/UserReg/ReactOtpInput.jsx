@@ -1,8 +1,25 @@
 import React, { useState } from "react";
 import OtpInput from "react18-input-otp";
 import Logo from "../../Assets/bookieLogo.svg";
+import { useNavigate } from "react-router-dom";
+import axios  from "axios";
+
+//       function Login() {
+// return (
+//   <div>
+{
+  /* <LoginForm
+        onSubmit={() => {
+          navigate('/user/dashboard');
+        }}
+      />
+    </div>
+  );
+} */
+}
 
 export default function ReactOtpInput() {
+  const navigate = useNavigate();
   const [otp, setOtp] = useState("");
 
   const handleChange = (enteredOtp) => {
@@ -12,8 +29,24 @@ export default function ReactOtpInput() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(otp)
+    
+      // console.log(otp) ? 1111 : navigate("/Wallet");
+    
   };
+
+  const resendOtp = (e) =>{
+   e.preventDefault()
+   axios.post('https://bookie-app.onrender.com/api/user/resendOtp/638a0548f57ef927065b662e').then((response) => {
+    console.log(response);
+    
+    console.log(response.data.token);
+  })
+  .catch (function (error) {
+    console.error(error.response.data);     // NOTE - use "error.response.data` (not "error")
+  });
+  }
+
+
   return (
     <div className="otpDiv">
       <span className="logoDiv">
@@ -36,6 +69,7 @@ export default function ReactOtpInput() {
           />
           <button className="otpsubmit">Login</button>
         </form>
+          <button className="resendotp"onSubmit={resendOtp} >Resend Otp</button>
       </div>
     </div>
   );

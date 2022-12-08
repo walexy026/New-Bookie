@@ -107,3 +107,10 @@ padding: 0.4rem 5.3rem;
   border:2px solid #1ABCCA ;
   margin-right: 0.5rem;
 }
+.resendotp{
+  background-color: transparent;
+  border: none;
+  margin-left: 8rem;
+  font-size: small;
+  color: #1ABCCA;
+}
