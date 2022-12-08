@@ -1,6 +1,9 @@
-<<<<<<< HEAD
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BooksPage from './BooksPage';
+import Buybooks from './buy-books/Buybooks';
+import Landingpage from './Landingpage';
+import Savemoneypage from './savemoneypage/Savemoneypage';
 import Savings from "./Components/Savings/Savings";
 import UpperPanel from "./Components/UpperPanel/UpperPanel";
 import Sidebars from "./Components/Sidebars/Sidebars";
@@ -16,6 +19,28 @@ import ReactOtpInput from "./Components/UserReg/ReactOtpInput";
 function App() {
   return (
     <BrowserRouter>
+    <Routes>
+				<Route
+					path='/'
+					element={<Landingpage />}
+				/>
+				<Route
+					exact
+					path='allbooks'
+					element={<BooksPage />}
+				/>
+
+				<Route
+					exact
+					path='savemoney'
+					element={<Savemoneypage />}
+				/>
+				<Route
+					exact
+					path='buybooks'
+					element={<Buybooks />}
+				/>
+			</Routes>
       <main className="dashboard">
         <UpperPanel />
         <div className="dashboardSegment">
@@ -41,41 +66,5 @@ function App() {
       </main>
     </BrowserRouter>
   );
-=======
-import { Route, Routes } from 'react-router-dom';
-import BooksPage from './BooksPage';
-import Buybooks from './buy-books/Buybooks';
-import Landingpage from './Landingpage';
-import Savemoneypage from './savemoneypage/Savemoneypage';
-
-function App() {
-	return (
-		<>
-			<Routes>
-				<Route
-					path='/'
-					element={<Landingpage />}
-				/>
-				<Route
-					exact
-					path='allbooks'
-					element={<BooksPage />}
-				/>
-
-				<Route
-					exact
-					path='savemoney'
-					element={<Savemoneypage />}
-				/>
-				<Route
-					exact
-					path='buybooks'
-					element={<Buybooks />}
-				/>
-			</Routes>
-		</>
-	);
->>>>>>> ffc9da38acbc215c2d97bf3894b3dbb356511bd9
-}
-
+  }
 export default App;
