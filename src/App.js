@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Route, Routes } from 'react-router-dom';
-import BooksPage from './BooksPage';
-import Buybooks from './buy-books/Buybooks';
-import Landingpage from './Landingpage';
-import Savemoneypage from './savemoneypage/Savemoneypage';
+import { Route, Routes } from "react-router-dom";
+import BooksPage from './Pages/AllBooks/BooksPage';
+import Buybooks from './Pages/buy-books/Buybooks';
+import Landingpage from './Pages/LandingPage/Landingpage';
+import Savemoneypage from './Pages/savemoneypage/Savemoneypage';
 import Savings from "./Components/Savings/Savings";
 import UpperPanel from "./Components/UpperPanel/UpperPanel";
 import Sidebars from "./Components/Sidebars/Sidebars";
@@ -19,7 +18,8 @@ import SettingsLayout from "./layout/SettingsLayout";
 import ReactOtpInput from "./Components/UserReg/ReactOtpInput";
 function App() {
   return (
-    <BrowserRouter>
+    <div>
+
     <Routes>
 				<Route
 					path='/'
@@ -65,7 +65,7 @@ function App() {
           </div>
         </div>
       </main>
-    </BrowserRouter>
+      </div>
   );
 }
   export default App;

@@ -1,4 +1,4 @@
-import footerLogo from '../assets/logo.svg'
+import footerLogo from '../../Assets/logo.svg'
 import { Link } from 'react-router-dom'
 import FooterCSS from './Footer.module.css'
 export default function Footer() {

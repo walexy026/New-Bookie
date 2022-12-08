@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg from '../assets/hero-fine-image.svg'
+import heroImg from '../../Assets/hero-fine-image.svg'
 import './Hero-section.css'
 
 export default function Hero() {

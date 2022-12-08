@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/logo.svg'
-import Cart from '../assets/Vector.svg'
-import dropDown from '../assets/drop-down.svg'
+import Logo from '../../Assets/logo.svg'
+import Cart from '../../Assets/Vector.svg'
+import dropDown from '../../Assets/drop-down.svg'
 import './Navbar.css'
 
 export default function Navbar() {

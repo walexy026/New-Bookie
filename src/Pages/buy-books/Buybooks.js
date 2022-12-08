@@ -1,13 +1,13 @@
 import React from 'react';
-import Navbar from '../nav-bar/Navbar';
-import BookShelf from '../assets/book-shelf.svg';
+import Navbar from '../../Components/nav-bar/Navbar';
+import BookShelf from '../../Assets/book-shelf.svg';
 import './Buybooks.css';
-import WhyUs from '../why-choose-us/WhyUs';
-import Girls from '../assets/gils-on-bed.svg';
-import Books from '../books/Books';
-import Button from '../button/Button';
-import Subscribe from '../subscribe/Subscribe';
-import Footer from '../footer/Footer';
+import WhyUs from '../../Components/why-choose-us/WhyUs';
+import Girls from '../../Assets/gils-on-bed.svg';
+import Books from '../../Components/books/Books';
+import Button from '../../Components/button/Button';
+import Subscribe from '../../Components/subscribe/Subscribe';
+import Footer from '../../Components/footer/Footer';
 
 export default function Buybooks() {
 	return (

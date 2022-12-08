@@ -1,5 +1,5 @@
 import React from 'react'
-import SubscribeImg from '../assets/bg-image.png'
+import SubscribeImg from '../../Assets/bg-image.png'
 import './Subscribe.css'
 export default function Subscribe() {
   return (

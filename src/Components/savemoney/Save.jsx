@@ -1,7 +1,7 @@
 import React from 'react'
-import Savings from '../assets/save-money-image.svg';
-import Family from '../assets/family-section-image.svg'
-import readMore from '../assets/read-more.svg'
+import Savings from '../../Assets/save-money-image.svg';
+import Family from '../../Assets/family-section-image.svg'
+import readMore from '../../Assets/read-more.svg'
 import './Save.css'
 
 

@@ -1,7 +1,7 @@
 import React, {  useState } from "react";
 import Slider from "react-slick";
 import "./TestimonialCarousel.css";
-import Testimonialsimg from "../assets/testimonial-image.svg";
+import Testimonialsimg from "../../Assets/testimonial-image.svg";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 

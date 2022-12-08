@@ -1,15 +1,15 @@
 import React from 'react';
-import Navbar from '../nav-bar/Navbar';
-import Coins from '../assets/save-coins.svg';
+import Navbar from '../../Components/nav-bar/Navbar';
+import Coins from '../../Assets/save-coins.svg';
 import './Savemoneypage.css';
-import WhyUs from '../why-choose-us/WhyUs';
-import flower from '../assets/flower.svg';
-import Paypal from '../assets/paypal.svg';
-import flutter from '../assets/flutterwave.svg';
-import Visa from '../assets/visa.svg';
-import Paystack from '../assets/paystack.svg';
-import Subscribe from '../subscribe/Subscribe';
-import Footer from '../footer/Footer';
+import WhyUs from '../../Components/why-choose-us/WhyUs';
+import flower from '../../Assets/flower.svg';
+import Paypal from '../../Assets/paypal.svg';
+import flutter from '../../Assets/flutterwave.svg';
+import Visa from '../../Assets/visa.svg';
+import Paystack from '../../Assets/paystack.svg';
+import Subscribe from '../../Components/subscribe/Subscribe';
+import Footer from '../../Components/footer/Footer';
 
 export default function Savemoneypage() {
 	return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import Easy from '../assets/easy-icon.svg'
-import Secure from '../assets/secure-icon.svg'
-import Flexible from '../assets/flexible-icon.svg'
+import Easy from '../../Assets/easy-icon.svg'
+import Secure from '../../Assets/secure-icon.svg'
+import Flexible from '../../Assets/flexible-icon.svg'
 import './WhyUs.css'
 
 export default function WhyUs() {
