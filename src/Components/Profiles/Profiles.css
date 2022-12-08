@@ -1,0 +1,23 @@
+.profileWrapper{
+    background: #E4E8E9;
+    margin: 10vh;
+   
+
+}
+.profileGoal {
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  padding:20px 50px;
+  /* text-align: center; */
+}
+.imageCropper{
+  background: #D9D9D9;
+  width: 150px;
+height: 150px;
+  border-radius: 50%;
+  position:relative;
+}
+.profileGoal h4 {
+  text-align: left;
+}

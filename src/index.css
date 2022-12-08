@@ -9,4 +9,14 @@ body {
     sans-serif;
 }
 
+<<<<<<< HEAD
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.fillup{
+  width: -webkit-fill-available;
+}
+=======
 
+>>>>>>> ffc9da38acbc215c2d97bf3894b3dbb356511bd9

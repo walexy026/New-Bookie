@@ -1,0 +1,54 @@
+.settingsWrapper{
+    display: flex;
+}
+.settingsPanel{
+ background:  #EFF6F8;
+ margin-top: 35px;
+height: 10vh;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+color: #595757;
+}
+.settingsPanel > h5{
+   
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #595757;
+padding-left: 3rem;
+padding-top: 1.5rem;
+}
+.settings{
+    background-color: #fff;
+}
+
+.settingsSideBar{
+background: #EFF6F8;
+width: 300px;
+}
+.listsettings{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    list-style: none;
+    color: #333;
+    /* gap: 1rem; */
+    background: #EFF6F8;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+}
+.listsettings:hover{
+    background: #1ABCCA;
+    color: #fff;
+}
+.acctsetts{
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 2rem; */
+}
+#pi{
+    font-size: 10px;
+}

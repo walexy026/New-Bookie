@@ -1,0 +1,39 @@
+.refferalWrapper{
+    margin-top: 10vh;
+    /* display: none; */
+}
+.refferal{
+    font-family: Outfit;
+    background-color: #EFF6F8;
+    /* padding: 5rem; */
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 40px;
+}
+.refferalWrap{
+    background-color: #FFFFFF;
+
+}
+.referralTable{
+    width: 100%;
+    /* background-color: #FFFFFF; */
+
+    
+}
+
+.referralCodeDiv{
+    font-family: Outfit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.referralCodeDiv > h6{
+font-size: 14px;
+}
+.codecopy{
+    background: #ACE4E9;
+    border-radius: 5px;
+/* text-align: right; */
+}

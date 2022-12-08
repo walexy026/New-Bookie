@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.sidebar {
+  font-family: "Bree Serif", serif;
+  flex: 1;
+  height: calc(100vh - 50px);
+  max-width: 250px;
+  background-color: #ffffff;
+  /* background-color: #1abcca; */
+  color: #595757;
+  position: sticky;
+  top: 45px;
+}
+
+.sidebarWrapper {
+  padding: 20px 0px 10px 20px;
+  color: red;
+}
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+.sidebarLogo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #595757;
+}
+
+.sidebarList  {
+  list-style: none;
+  padding: 5px;
+  color: #595757;
+
+}
+a{
+ 
+  /* padding: 5px; */
+  text-decoration: none !important;
+  color: #595757 !important;
+  cursor: pointer;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  border-radius: 1px;
+  
+}
+.n{
+  display: block;
+}
+.LogOut {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  padding: 5px 100px 5px 20px;
+  margin-bottom: 1rem;
+}
+.LogOut:hover {
+  color: #595757;
+  
+}
+.sidebarListItem.active,
+.sidebarListItem:hover {
+  background-color: #1abcca;
+  color: #595757;
+}

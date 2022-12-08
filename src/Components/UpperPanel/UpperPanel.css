@@ -1,0 +1,12 @@
+.upperpanel{
+    position: fixed;
+    top: 0;
+    background: #FFFFFF;
+    height: 3rem;
+    width: 100%;
+}
+.uppericon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

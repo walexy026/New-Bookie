@@ -1,0 +1,70 @@
+.securitySettings {
+  padding-left: 3rem;
+  font-family: "Outfit";
+}
+
+.securitySettings h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #595757;
+}
+
+label {
+  display: block;
+}
+.securitySettings p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #595757;
+}
+.securityform {
+  display: flex;
+  align-self: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  /* justify-content: center; */
+}
+.acctInput {
+  min-width: 350px;
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  /* border: red; */
+}
+hr {
+  border: 1px solid #595757;
+}
+.securityinput {
+  min-width: 350px;
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  opacity: 0.4;
+}
+.twoFacauth > h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #595757;
+}
+.twoFacauth > p {
+  font-weight: 700;
+  /* font-size: 24px; */
+  line-height: 16px;
+  color: #595757;
+}
+.authtokendiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+.authtoken{
+    width: 35px;
+    border-radius: 5px;
+    border: 1px solid #5990FF;
+    font-size: 30px;
+    padding-left: 10px
+}
