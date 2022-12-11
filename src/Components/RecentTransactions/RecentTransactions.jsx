@@ -1,7 +1,7 @@
 import React from "react";
 import "./RecentTransactions.css";
 import {Table} from 'react-bootstrap';
-import Refferal from "../Refferal/Refferal";
+// import Refferal from "../Refferal/Refferal";
 
 
 const RecentTransactions = () => {

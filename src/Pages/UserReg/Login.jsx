@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "./UserReg.css";
 import Logo from "../../Assets/bookieLogo.svg";
-import Useform from "./useForm";
+import loginForm from "./loginForm";
 
 const SignUp = () => {
-  
-
-  const { handleChange, handleSubmit, values, errors } = Useform();
+  const { handleChange, handleSubmit, values, errors } = loginForm();
 
   return (
     <div className="signUpContainer">
@@ -16,22 +14,12 @@ const SignUp = () => {
             <img src={Logo} alt="Logo" />
             <h4>Bookie</h4>{" "}
           </span>
-          <h5>Sign up </h5>
-          <p>Secure an acoount with Bookie</p>
+          <h5>Login</h5>
+          <p>Welcome Back </p>
           <div>
-            
-            <label className='labelSignup' htmlFor="email">Email</label >
-            <input
-              name="email"
-              type="email"
-              value={values.email}
-              onChange={handleChange}
-              autoComplete="email"
-              className="pwdInput"
-            />
-            {errors.email ? <span> {errors.email}</span> : null}
-
-            <label className='labelSignup' htmlFor="phone-input">Phone Number</label>
+            <label className="labelSignup" htmlFor="phone-input">
+              Phone Number
+            </label>
             <input
               type="tel"
               name="phoneNumber"
@@ -56,14 +44,15 @@ const SignUp = () => {
             />
             {errors.password ? <span> {errors.password}</span> : null}
 
+            <label htmlFor="">
+              <input type="checkbox" name="" id="" />
+              Remember Me
+            </label>
             <div className="btnsignUpCON">
               <button className="btnSignUp">Proceed</button>
             </div>
             <p>
-              By signing up you agree to Bookie Term of use and Privacy Policy
-            </p>
-            <p>
-              Already have an account. <a href="">Login</a>{" "}
+            Don't have a Bookie account. <a href="">Sign Up</a>{" "}
             </p>
           </div>
         </form>

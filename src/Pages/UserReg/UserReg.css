@@ -1,11 +1,11 @@
 .signUpContainer {
   font-family: outfit;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   display: grid;
   place-items: center;
-  height: 500px;
+  height: 600px;
   /* width: 300px; */
-  /* background-color: rgb(243, 242, 242); */
+  background-color: rgb(243, 242, 242);
 }
 .logoDiv {
   display: flex;
@@ -69,6 +69,7 @@ color: #595757;
 .pwdInput {
   width: -webkit-fill-available;
   border-radius: 5px;
+  height: 30px;
 }
 .otpDiv{
   margin-top: 10vh;

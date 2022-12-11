@@ -1,8 +1,9 @@
 import React from "react";
 import './Dashboard.css'
-import RecentTransactions from "../../Components/RecentTransactions/RecentTransactions";
-import Sidebars from "../../Components/Sidebars/Sidebars";
-import UpperPanel from "../../Components/UpperPanel/UpperPanel";
+// import RecentTransactions from "../../Components/RecentTransactions/RecentTransactions";
+// import Sidebars from "../../Components/Sidebars/Sidebars";
+import Overview from "../../Components/Overview/Overview";
+// import UpperPanel from "../../Components/UpperPanel/UpperPanel";
 
 
 
@@ -11,13 +12,13 @@ const Dashboard = () => {
    
     
     <div className="dashboard">
-    <UpperPanel/>
-      <div className="dashboardSegment">
-      <Sidebars />
-      <div>
-      <RecentTransactions/>
+  
+    
+     <div className="dashboardSegment"> 
+      {/* <Sidebars /> */}
+      <Overview/>
       </div>
-      </div> 
+      {/* </div>  */}
     
     
     </div>

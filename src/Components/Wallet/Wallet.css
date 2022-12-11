@@ -1,5 +1,7 @@
 .walletWrapper{
-margin-top: 10vh;
+  position: relative;
+  width: 80vw;
+/* margin-top: 10vh; */
 }
 .upperWallet{
     display: flex;

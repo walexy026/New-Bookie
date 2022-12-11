@@ -15,12 +15,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: center;
     gap: 20px;
     margin-left: 1.3rem;
     
    
 }
-.navbar-list-container ul {
+li{
+    display: flex;
+    align-items: center;
+}
+.navbar-list-container > ul {
     display: flex;
     justify-content: space-around;
     gap: 50px;
@@ -47,7 +52,9 @@
 .nav-logo {
     max-width: 80px;
     max-height: 80px;
+
 }
+
 ul li {
     list-style-type: none;
 }
