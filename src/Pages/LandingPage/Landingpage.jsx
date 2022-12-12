@@ -14,12 +14,12 @@ export default function Landingpage() {
 		<>
 			<Navbar />
 			<Hero />
-			<Save />
-			<Button/>
-			<Books />
-			<TestimonialCarousel />
-			<Subscribe />
-			<Footer />
+			{/* <Save /> */}
+			{/* <Button/> */}
+			{/* <Books /> */}
+			{/* <TestimonialCarousel /> */}
+			{/* <Subscribe /> */}
+			{/* <Footer /> */}
 		</>
 	);
 }

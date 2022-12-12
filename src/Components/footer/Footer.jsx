@@ -47,10 +47,6 @@ export default function Footer() {
 
           {visLinks && (
             <ul>
-              {/* <li  >
-              Links
-            </li> */}
-
               <li>
                 <Link to="#" className={FooterCSS.footerLink}>
                   Contact Us
@@ -82,11 +78,6 @@ export default function Footer() {
           {visAccount && (
             <ul>
               <li>
-                {/* <Link to="#" className={FooterCSS.footerLink}> */}
-
-                {/* </Link> */}
-              </li>
-              <li>
                 <Link to="#" className={FooterCSS.footerLink}>
                   Profile
                 </Link>
@@ -115,11 +106,6 @@ export default function Footer() {
           </div>
           {visSocials && (
             <ul>
-              <li>
-                {/* <Link to="#" className={FooterCSS.footerLink}> */}
-
-                {/* </Link> */}
-              </li>
               <li>
                 <Link to="#" className={FooterCSS.footerLink}>
                   Instagram

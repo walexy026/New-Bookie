@@ -28,7 +28,7 @@ export default function Save() {
             <button className="save-section-btn">Learn more <img src={readMore} alt="read" className='readmore' /></button>
             </div>
             <div className="img-container">
-                <img src={Family} alt="savings" className="savings-img" />
+                {/* <img src={Family} alt="savings" className="savings-img" /> */}
             </div>
         </div>
     </section>
