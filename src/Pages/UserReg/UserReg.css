@@ -115,3 +115,16 @@ padding: 0.4rem 5.3rem;
   font-size: small;
   color: #1ABCCA;
 }
+.pswrdDiv{
+  position: relative;
+}
+
+.showHideIcon{
+  position: absolute;
+  right: 10px;
+  cursor: alias;
+
+}
+.err{
+  color: #f21e08;
+}

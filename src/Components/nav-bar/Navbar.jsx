@@ -22,8 +22,8 @@ export default function Navbar() {
         </div>
         <div className="nav-right-container">
             <img src={Cart} alt="cart"  className='cart'/>
-            <button className="nav-login-btn">Login</button>
-            <button className="nav-signup-btn">Sign Up</button>
+            <button className="nav-login-btn"> <Link to='/login'>Login</Link></button>
+            <button className="nav-signup-btn" > <Link to='/signup'>Sign Up</Link></button>
         </div>
     </nav>
   )

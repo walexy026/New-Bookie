@@ -10,11 +10,14 @@ export default function Subscribe() {
         </div>
         <div className="subscribe-container">
           <h3 className="subscribe-heading"> New to <span className="blue-bookie">Bookie</span></h3> 
-          <p className="subscribe-paragraph">
+          <b className="subscribe-paragraph">
             Subscribe to our newsletter to get updates on our lattest offers.
-          </p>
+          </b>
+          <div className='subscriberInput'>
+      <label htmlFor="email"></label>
           <input type="email"  placeholder= " Enter Email" name="email" id='subscribe-input'/>
           <button type="submit" className='subscribe-button'>Subscribe</button>
+          </div>
         </div>
       </div>
     </section>

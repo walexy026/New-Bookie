@@ -8,7 +8,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Sidebars = () => {
   return (
-    <div className="ww">
+    <div className="sidebarwrap">
       <div className="sidebar">
         <div className="sidebarWrapper">
           <div className="sidebarMenu">

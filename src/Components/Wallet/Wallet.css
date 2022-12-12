@@ -1,6 +1,8 @@
 .walletWrapper{
   position: relative;
   width: 80vw;
+  
+  background-color:  #F5F5F5;
 /* margin-top: 10vh; */
 }
 .upperWallet{
@@ -8,6 +10,7 @@
     justify-content: space-around;
     margin-right: 5rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .walletOverviewContainer {

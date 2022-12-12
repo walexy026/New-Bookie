@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/allbooks" element={<BooksPage />} />
         <Route exact path="/savemoney" element={<Savemoneypage />} />
         <Route exact path="/buybooks" element={<Buybooks />} />
-        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/otp" element={<ReactOtpInput />} />
         <Route path="/login" element={<Login />} />
         <Route path="/ForgetPassword" element={<ForgetPassword />} />

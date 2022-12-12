@@ -1,12 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import "./UserReg.css";
 import Logo from "../../Assets/bookieLogo.svg";
 import Useform from "./useForm";
+import {BsEye,BsEyeSlash } from 'react-icons/bs'
 
 const SignUp = () => {
   
 
   const { handleChange, handleSubmit, values, errors } = Useform();
+  const [showPassword, setShowPassword] =useState(false)
 
   return (
     <div className="signUpContainer">
@@ -29,7 +31,7 @@ const SignUp = () => {
               autoComplete="email"
               className="pwdInput"
             />
-            {errors.email ? <span> {errors.email}</span> : null}
+            {errors.email ? <span className="err"> {errors.email}</span> : null}
 
             <label className='labelSignup' htmlFor="phone-input">Phone Number</label>
             <input
@@ -39,22 +41,25 @@ const SignUp = () => {
               onChange={handleChange}
               className="pwdInput"
             />
-            {errors.phoneNumber && <span> {errors.phoneNumber}</span>}
+            {errors.phoneNumber && <span className="err"> {errors.phoneNumber}</span>}
 
             <label className="labelSignup" htmlFor="password">
               Enter Password
             </label>
+            <div className="pswrdDiv">
             <input
               name="password"
-              type="password"
+              type={showPassword ? 'text': "password"}
               id="password"
               // ref={pwdRef}
               className="pwdInput"
               autoComplete="off"
               value={values.password}
               onChange={handleChange}
-            />
-            {errors.password ? <span> {errors.password}</span> : null}
+              />
+             <span className="showHideIcon" onClick={()=>setShowPassword(!showPassword)}>{showPassword? <BsEye/>:<BsEyeSlash/>} </span>
+              </div>
+            {errors.password ? <span className="err"> {errors.password}</span> : null}
 
             <div className="btnsignUpCON">
               <button className="btnSignUp">Proceed</button>
