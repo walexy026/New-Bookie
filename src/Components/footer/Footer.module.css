@@ -1,10 +1,13 @@
 .bookieFooter {
     background: #DFE2E2;
-    padding: 1rem 0 2rem 4rem;
+    padding: 1rem 1rem 2rem 4rem;
     display: flex;
-    max-width: 100%;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* max-width: 100%; */
+    /* flex-wrap: wrap; */
     margin-top: 2rem;
+    /* display: none; */
 
 }
 
@@ -33,7 +36,7 @@ li {
 .footerContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
     
     
 
@@ -41,10 +44,14 @@ li {
 
 .logobox {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     align-items: center;
-   
+    /* justify-content:center */
 
+}
+.logobox >p{
+    padding-top: 2rem;
+    font-weight: 700;
 }
 
 .footerLogo {
@@ -66,10 +73,10 @@ li {
 
 .listContainer {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     flex: 1.8;
-    width: 80%;
+    /* width: 80%; */
     align-items: center;
     padding-top: 1rem;
 
@@ -80,8 +87,16 @@ li {
 .list {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.7rem;
     justify-content: center;
+    align-items: center;
+}
+
+.firstlist{
+    color: #595757;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    /* padding-left: 2rem; */
 }
 
 .list ul li {
@@ -95,26 +110,29 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 23px;
+    /* line-height: 23px; */
     color: #595757;
     padding-top: 1.2rem;
-    padding-bottom: 1.5rem;
+    /* padding-bottom: 1.5rem; */
+    width: 200px;
+    /* display: none; */
 }
 
-.address {
+address {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 23px;
+    /* line-height: 23px; */
     color: #595757;
+    /* display: none; */
 }
 
 /* Mobile View */
 
 @media screen and (max-width: 900px) {
     .bookieFooter {
-        padding: 1rem 0 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 
     .Brandname {
@@ -146,7 +164,11 @@ li {
 @media screen and (max-width: 700px) {
     .bookieFooter {
         display: block;
-        padding: 1rem 0 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .footerContainer{
+        text-align: center;
+    
     }
 
     .logobox {
@@ -157,6 +179,8 @@ li {
     .footerContent {
         margin: auto;
         padding-bottom: 1rem;
+        text-align: center;
+    
     }
 
     .Brandname {
@@ -173,6 +197,7 @@ li {
         font-size: 14px;
         text-align: center;
         line-height: 10px;
+        width: auto;
 
     }
 
@@ -195,7 +220,7 @@ li {
 
 @media screen and (max-width: 350px) {
     .listContainer {
-        display: flex;
+         display: flex; 
         flex-direction: column;
         justify-content: center;
         flex-basis: 250px;
@@ -207,4 +232,7 @@ li {
     .content {
         line-height: 1.5rem;
     }
+    /* .footerLink{
+        display: none;
+    } */
 }
