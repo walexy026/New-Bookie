@@ -1,5 +1,5 @@
 import React from "react";
-import ValidateOtp from "../UserReg/ValidateOtp";
+import ValidateOtp from "../../Pages/UserReg/ValidateOtp";
 import "./SecuritySettings.css";
 
 const SecuritySettings = () => {

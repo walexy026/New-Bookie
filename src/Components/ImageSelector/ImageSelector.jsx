@@ -1,47 +1,33 @@
-import { useFilePicker } from "use-file-picker";
-import React from "react";
+import React from 'react';
+import { Uploader } from "uploader";
+import { UploadButton } from "react-uploader";
 import { BsFillCameraFill } from "react-icons/bs";
 
-const ImageSelector = ({style}) => {
-  const [openFileSelector, { filesContent, loading, errors, clear }] = useFilePicker({
-    readAs: "DataURL",
-    accept: "image/*",
-    multiple: true,
-    limitFilesConfig: { max: 1 },
-    // minFileSize: 0.1, // in megabytes
-    maxFileSize: 50,
-    imageSizeRestrictions: {
-      maxHeight: 900, // in pixels
-      maxWidth: 1600,
-      minHeight: 600,
-      minWidth: 768,
-    },
-  });
+// Get production API keys from Upload.io
+const uploader = Uploader({
+  apiKey: "free"
+});
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+// Customize the file upload UI (see "customization"):
+const options = { multi: true }
 
-  if (errors.length) {
-    return <div>Error...</div>;
-  }
-  
+// Render the file upload button:
+const ImageSelector = () =>
+  <UploadButton uploader={uploader}         // Required.
+                options={options}           // Optional.
+                onComplete={files => {      // Optional.
+                  if (files.length === 0) {
+                    console.log('No files selected.')
+                  } else {
+                    console.log('Files uploaded:');
+                    console.log(files.map(f => f.fileUrl));
+                  }
+                }}>
+    {({onClick}) =>
+      <button onClick={onClick} style={{transform: 'translateY(-40px)'}}  >
+      <BsFillCameraFill color="#1ABCCA" size='2rem' />
+      </button>
+    }
+  </UploadButton>
 
-  return (
-    <div style={style} >
-      <div onClick={() => openFileSelector()}>
-        <BsFillCameraFill color="#1ABCCA" size='2rem' />
-        <button onClick={() => clear()}>Clear</button>
-      </div>
-      <br />
-      {filesContent.map((file, index) => (
-        <div key={index}>
-          <h2>{file.name}</h2>
-          <img alt={file.name} src={file.content}></img>
-          <br />
-        </div>
-      ))}
-    </div>
-  );
-};
-export default ImageSelector;
+  export default ImageSelector;

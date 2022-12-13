@@ -1,12 +1,13 @@
 .upperpanel{
-    position: fixed;
+    position: sticky;
     top: 0;
     background: #FFFFFF;
     height: 3rem;
     width: 100%;
+    z-index:100;
 }
 .uppericon{
     position: absolute;
-    right: 10px;
+    right: 4rem;
     top: 10px;
 }

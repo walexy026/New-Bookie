@@ -3,18 +3,22 @@
 .sidebar {
   font-family: "Bree Serif", serif;
   flex: 1;
-  height: calc(100vh - 50px);
+  height: 100vh;
   max-width: 250px;
   background-color: #ffffff;
   /* background-color: #1abcca; */
   color: #595757;
   position: sticky;
-  top: 45px;
+  top: 0px;
 }
-
+.sidebarwrap{
+  display: flex;
+}
 .sidebarWrapper {
   padding: 20px 0px 10px 20px;
-  color: red;
+  /* color: red; */
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 .sidebarMenu {
@@ -57,7 +61,7 @@ a{
 .LogOut {
   position: absolute;
   bottom: 0;
-  color: #ffffff;
+  color: #eb0f0f;
   padding: 5px 100px 5px 20px;
   margin-bottom: 1rem;
 }
@@ -69,4 +73,11 @@ a{
 .sidebarListItem:hover {
   background-color: #1abcca;
   color: #595757;
+}
+
+@media only screen and (max-width:500px) {
+  .sidebarwrap{
+    display: flex;
+    flex-direction: column;
+  }
 }

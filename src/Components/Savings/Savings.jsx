@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { FeaturedInfo } from "../FeaturedInfo/FeaturedInfo";
+import UpperPanel from "../UpperPanel/UpperPanel";
 import ProgressBar from "./ProgressBar";
 import SavingsGoal from "./SavingsGoal";
 import './SavingsGoal.css'
@@ -9,13 +10,14 @@ const Savings = () => {
 
   return (
     <div>
+      <UpperPanel/>
         <FeaturedInfo/>
         <SavingsGoal open={openModal} onClose={()=> setOpenModal(false)}/>
       <div className="savingsContainer">
         <div className="savingsheader">
 
         <h6>Here are your savings Goal </h6>   
-      <button onClick={()=>setOpenModal(true)} className="createGoal">Create a new Goal</button>    
+      <button onClick={()=>setOpenModal(true)} className="createGoal">Create a new Goal </button>    
         </div>
         <table className='ta' >
           <thead>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './CopyClipboard.css'
-import { CopyToClipboard } from "react-copy-to-clipboard";
+
 
 
 const  CopyClipboard = () => {
@@ -17,13 +17,7 @@ const  CopyClipboard = () => {
         <button className="clipboardBtn" onClick={handleCopyClick} >
           <span>{isCopied ? 'Copy!' : 'Copied'}</span>
         </button>
-        <div>
-        {/* <CopyToClipboard text="got it" onCopy={() => "Copied"}>
-        <span>Copy Account Details</span>
-      </CopyToClipboard> 
-        */}
-     
-
+        <div>     
         </div>
       </div>
       

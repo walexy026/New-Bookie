@@ -2,10 +2,12 @@ import React from "react";
 import "./Refferal.css";
 import { Table } from "react-bootstrap";
 import CopyClipboard from "./CopyClipboard";
+import UpperPanel from "../UpperPanel/UpperPanel";
 
 const Refferal = () => {
   return (
     <div className="refferalWrapper">
+      <UpperPanel/>
       <div className="referralCodeDiv">
         <div className="">
           <h4>Refferal </h4>
