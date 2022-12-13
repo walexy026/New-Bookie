@@ -12,11 +12,8 @@ const Profiles = () => {
       <h4>Profile</h4>
         <div className="profileGoal">
           <div className="imageCropper">
-           
-            <ImageSelector
-              style={{ position: "absolute", bottom: "0", right: "0px" }}
-            />
           </div>
+            <ImageSelector/>
           <InputProfile/>
         </div>
       </div>

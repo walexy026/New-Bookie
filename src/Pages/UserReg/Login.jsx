@@ -67,7 +67,7 @@ const SignUp = () => {
               <button className="btnSignUp">Proceed</button>
             </div>
             <p>
-              Don't have a Bookie account. <Link to="/signup">Sign Up</Link>
+              Don't have a Bookie account. <Link className="linkk" to="/signup">Sign Up</Link>
             </p>
           </div>
         </form>

@@ -3,6 +3,8 @@ import "./UserReg.css";
 import Logo from "../../Assets/bookieLogo.svg";
 import Useform from "./useForm";
 import {BsEye,BsEyeSlash } from 'react-icons/bs'
+import {Link} from 'react-router-dom'
+
 
 const SignUp = () => {
   
@@ -68,7 +70,7 @@ const SignUp = () => {
               By signing up you agree to Bookie Term of use and Privacy Policy
             </p>
             <p>
-              Already have an account. <p>Login</p>
+              Already have an account. <Link className="linkk" to ='/login'>Login</Link> 
             </p>
           </div>
         </form>

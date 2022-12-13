@@ -33,7 +33,6 @@
 .user-info-form > h5{
 font-weight: 700;
 font-size: 24px;
-/* line-height: 30px; */
 color: #595757;
 
 }
@@ -127,4 +126,7 @@ padding: 0.4rem 5.3rem;
 }
 .err{
   color: #f21e08;
+}
+.linkk{
+  color: #1ABCCA !important;
 }
