@@ -74,3 +74,10 @@ a{
   background-color: #1abcca;
   color: #595757;
 }
+
+@media only screen and (max-width:768px) {
+  .sidebarwrap{
+    display: flex;
+    flex-direction: column;
+  }
+}
