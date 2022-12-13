@@ -75,7 +75,7 @@ a{
   color: #595757;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:500px) {
   .sidebarwrap{
     display: flex;
     flex-direction: column;
