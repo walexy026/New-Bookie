@@ -4,12 +4,11 @@ header {
   background: #ffffff;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.240);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 15vh;
   padding: 1rem 1.5rem;
-  /* display: none; */
-  /* position: relative; */
+ 
 }
 .navLogo {
   display: flex;
@@ -18,9 +17,11 @@ header {
   font-size: 18px;
   font-weight: 400;
   gap: 0.5rem;
+  margin-left: 5rem;
+
 }
 .navLogo img{
-    width: 50px;
+    width: 60px;
 }
 .navLogo > h2 {
   color: #1abcca;
@@ -79,12 +80,7 @@ border-color: #1abcca;
     right: 15px; */
     cursor: pointer;
   }
-  .drop-down:hover {
-    color: #1abcca;
-  }
-  /* ul{
-    display: none;
-  } */
+  
   
   @media only screen and (max-width: 768px) {
     .hamburger {
@@ -94,8 +90,9 @@ border-color: #1abcca;
       background-color:#1abcca;
       font-size:30px;
       border-radius: 3px;
-  
-  
+    }
+    .navLogo{
+      margin-left: 0rem;
     }
     .navLogo > h2 {
      display: none;
@@ -142,26 +139,12 @@ border-color: #1abcca;
     }
   }
     
+  ul li {
+    list-style-type: none;
+  }
 
 
   
-/*   
-  .navLink {
-    display: block;
-    position: absolute;
-    left: -500px;
-    top: 15vh;
-    z-index: 1000;
-    height: 40vh;
-    width: 50vw;
-    transition: 0.9 all ease-in-out;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e5e5e5;
-    padding-bottom: 1rem;
-  }   */
-
 
 li {
   /* display: flex; */
@@ -173,9 +156,6 @@ li {
 
 
 
-ul li {
-  list-style-type: none;
-}
 .nav-link {
   text-decoration: none;
   font-family: "Bree Serif";
@@ -196,37 +176,3 @@ ul li {
 }
 
 
-
-@media (max-width: 900px) {
-  .navbar {
-    gap: 10px;
-  }
-  .nav-logo-container {
-    gap: 5px;
-  }
-  .nav-right-container {
-    gap: 10px;
-  }
-  .brandname {
-    font-size: 30px;
-  }
-  .nav-logo {
-    width: 40px;
-    height: 40px;
-  }
-  .nav-link {
-    font-size: 15px;
-    gap: 20px;
-  }
-  .nav-login-btn,
-  .nav-signup-btn {
-    font-size: 13px;
-    width: 3rem;
-    height: 1.5rem;
-  }
-}
-@media (max-width: 550px) {
-  .navbar {
-    display: none;
-  }
-}

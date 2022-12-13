@@ -14,7 +14,7 @@ export default function Landingpage() {
 		<>
 			<Navbar />
 			<Hero />
-			{/* <Save /> */}
+			<Save />
 			{/* <Button/> */}
 			{/* <Books /> */}
 			{/* <TestimonialCarousel /> */}

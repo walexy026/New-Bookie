@@ -6,7 +6,7 @@ import dropDown from "../../Assets/drop-down.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   function handleClick() {
     setToggle(!toggle);
@@ -17,7 +17,7 @@ const Navbar = () => {
         <img src={Logo} alt="logo" className="nav-logo" />
         <h2>Bookie</h2>
       </div>
-      <ul  className={toggle ? "navLinks" || "open" : "navShow" || 'close'}>
+      <ul  className={toggle ? "navLinks" : "navShow"}>
       {/* <ul className="navLinks"> */}
         <li className="lists">
           <Link to="/" className="nav-link">
