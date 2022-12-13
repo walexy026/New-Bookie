@@ -1,8 +1,8 @@
 .bookieFooter {
     background: #DFE2E2;
-    padding: 1rem 1rem 2rem 4rem;
+    padding: 1rem 4rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
 }
@@ -55,7 +55,7 @@ li {
     font-size: 35px;
     line-height: 10px;
     color: #595757;
-    padding-left: .8rem;
+    padding-left: 0.8rem;
     align-items: center;
 }
 

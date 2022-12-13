@@ -4,9 +4,9 @@ import FooterCSS from "./Footer.module.css";
 import { useState } from "react";
 
 export default function Footer() {
-  const [visLinks, setVisLinks] = useState(false);
-  const [visAccount, setVisAccount] = useState(false);
-  const [visSocials, setVisSocials] = useState(false);
+  const [visLinks, setVisLinks] = useState(true);
+  const [visAccount, setVisAccount] = useState(true);
+  const [visSocials, setVisSocials] = useState(true);
   const toggleLinks = () => {
     setVisLinks(!visLinks);
   };
