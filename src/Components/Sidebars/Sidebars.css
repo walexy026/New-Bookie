@@ -6,19 +6,58 @@
   height: 100vh;
   max-width: 250px;
   background-color: #ffffff;
-  /* background-color: #1abcca; */
   color: #595757;
   position: sticky;
   top: 0px;
 }
+.hamburger {
+  display: none;
+  /* position: absolute;
+  top: 15px;
+  right: 15px; */
+  cursor: pointer;
+}
+
+@media only screen and (max-width:500px) {
+  .sidebarwrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    min-width: 320px;
+    background-color: #eb0f0f;
+    z-index: 1000;
+    height: 10vh;
+  }
+  .sidebarList{
+    display: flex;
+    height: 10vh;
+  }
+  .sidebarLogo img{
+    width: 30px;
+  }
+  .listside{
+    display: none;
+  }
+  .hamburger {
+      display: block;
+      color: #fff;
+      border: none;
+      background-color:#1abcca;
+      font-size:30px;
+      border-radius: 3px;
+      position: absolute;
+      right: 15px;
+      top: 5px;
+    }
+} 
 .sidebarwrap{
   display: flex;
 }
 .sidebarWrapper {
   padding: 20px 0px 10px 20px;
-  /* color: red; */
-  /* display: flex; */
-  /* justify-content: space-between; */
 }
 
 .sidebarMenu {
@@ -40,7 +79,6 @@
 }
 a{
  
-  /* padding: 5px; */
   text-decoration: none !important;
   color: #595757 !important;
   cursor: pointer;
@@ -49,7 +87,6 @@ a{
 .sidebarListItem {
   padding: 5px;
   cursor: pointer;
-  /* display: none; */
   display: flex;
   align-items: center;
   border-radius: 1px;
@@ -75,9 +112,3 @@ a{
   color: #595757;
 }
 
-@media only screen and (max-width:500px) {
-  .sidebarwrap{
-    display: flex;
-    flex-direction: column;
-  }
-}

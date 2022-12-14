@@ -20,6 +20,7 @@ import ForgetPassword from "./Pages/UserReg/ForgetPassword";
 import ReactOtpInput from "./Pages/UserReg/ReactOtpInput";
 import Settings from "./Components/Settings/Settings";
 // import DashboardLayout from "./layout/DashboardLayout";
+
 function App() {
   return (
     <div>
@@ -44,29 +45,7 @@ function App() {
           </Route>
         </Route>
 
-        {/* <div className="dashboard"> */}
-        {/* <UpperPanel /> */}
-        {/* <div className="dashboardSegment"> */}
-        {/* <div className="fillup"> */}
-        {/* <Sidebars /> */}
-        {/* <Routes> */}
-        {/* <Route path="/ii" element={<Overview />} /> */}
-        {/* 
-              <Route element = {<DashboardLayout/>} >
-                <Route path = "/dashboard/*" element= {<Sidebars/>}/>
-              </Route> */}
-
-        {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
-
-        {/*             
-              <Route element={<SettingsLayout />}>
-                <Route path="/settings/*" element={<Settings />} />
-              </Route>
-             
-            </Routes> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
+  
       </Routes>
     </div>
   );
