@@ -17,3 +17,7 @@ code {
   width: -webkit-fill-available;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
