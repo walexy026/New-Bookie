@@ -34,6 +34,7 @@ const SignUp = () => {
               className="pwdInput"
             />
             {errors.email ? <span className="err"> {errors.email}</span> : null}
+           
 
             <label className='labelSignup' htmlFor="phone-input">Phone Number</label>
             <input

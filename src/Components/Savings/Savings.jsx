@@ -9,7 +9,7 @@ const Savings = () => {
     const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div>
+    <div className='savingsS'>
       <UpperPanel/>
         <FeaturedInfo/>
         <SavingsGoal open={openModal} onClose={()=> setOpenModal(false)}/>

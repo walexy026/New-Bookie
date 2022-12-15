@@ -41,6 +41,7 @@ function App() {
           <Route path="/dashboard/Wallet" element={<Wallet />} />
           <Route path="/dashboard/settings" element={<Settings />}>
             <Route path="/dashboard/settings/" element={<AccountSettings/>} />
+            {/* <Route path="/dashboard/accountsettings" element={<AccountSettings/>} /> */}
             <Route path="/dashboard/settings/securitysettings" element={<SecuritySettings/>} />
           </Route>
         </Route>

@@ -1,18 +1,20 @@
 import React from "react";
 import ValidateOtp from "../../Pages/UserReg/ValidateOtp";
 import "./SecuritySettings.css";
+import { Link } from "react-router-dom";
 
 const SecuritySettings = () => {
   return (
     <div className="securitySettings">
       <h5>Security Setting </h5>
+      <Link to='accountsettings'>Account Setting</Link>
       <div>
         <h5>Reset Password </h5>
         <b>This consist your personal information and other details</b>
         <form action="">
           <div className="securityform">
             <div>
-              <label htmlFor="PhoneNumber">Phone Number</label>
+              <label className="labelsecurity" htmlFor="PhoneNumber">Phone Number</label>
               <input
                 className="securityinput"
                 type="tel"
@@ -21,7 +23,7 @@ const SecuritySettings = () => {
               />
             </div>
             <div>
-              <label htmlFor="NewPassword ">New Password </label>
+              <label className="labelsecurity" htmlFor="NewPassword ">New Password </label>
               <input
                 className="securityinput"
                 type="password"
@@ -32,7 +34,7 @@ const SecuritySettings = () => {
           </div>
           <div className="securityform">
             <div>
-              <label htmlFor="OldPassword ">Old Password </label>
+              <label className="labelsecurity" htmlFor="OldPassword ">Old Password </label>
               <input
                 className="securityinput"
                 type="password"
@@ -41,7 +43,7 @@ const SecuritySettings = () => {
               />
             </div>
             <div>
-              <label htmlFor="Re-enter New Password ">
+              <label className="labelsecurity" htmlFor="Re-enter New Password ">
                 Re-enter New Password{" "}
               </label>
               <input className="securityinput" type="password" name="" id="" />

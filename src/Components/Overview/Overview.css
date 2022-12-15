@@ -1,4 +1,6 @@
-.overviewWrap{
-    position:relative;
-    background-color: #efefef ;
+.overviewWrap {
+  position: relative;
+  background-color: #efefef;
+  width: -webkit-fill-available;
+  padding: 0rem 1rem;
 }

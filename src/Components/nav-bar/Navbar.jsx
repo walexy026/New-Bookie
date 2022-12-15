@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/logo.svg";
-import {} from "react-icons";
+import {FaBars} from 'react-icons/fa'
+import {GrClose} from "react-icons/gr";
 import dropDown from "../../Assets/drop-down.svg";
 import "./Navbar.css";
 
@@ -37,9 +38,9 @@ const Navbar = () => {
         <button className="navbtnsignup"><Link to='/signup'>Sign Up</Link></button>
         <button className="hamburger" onClick={handleToggle}>
           {toggle ? (
-            <span className="open">&#9776;</span>
+            <span className="open"><FaBars/> </span>
           ) : (
-            <span className="close">&times;</span>
+            <span className="close"><GrClose/></span>
           )}
         </button>
       </div>

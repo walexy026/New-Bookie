@@ -1,10 +1,15 @@
 import React from "react";
 import "./AccountSettings.css";
+import { Link } from "react-router-dom";
 
 const AccountSettings = () => {
   return (
     <div className="AccountSettings">
-      <h5>Account Setting </h5>
+     <span>
+       <h5>Account Setting </h5>
+      {/* <Link></Link> */}
+      <Link to='securitysettings'>Security Settings</Link>
+      </span>
       <div>
         <h5>Personal Information</h5>
         <p>This consist your personal information and other details</p>

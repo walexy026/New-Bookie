@@ -4,7 +4,7 @@
   font-family: "Bree Serif", serif;
   flex: 1;
   height: 100vh;
-  max-width: 250px;
+  max-width: 280px;
   background-color: #ffffff;
   color: #595757;
   position: sticky;
@@ -37,6 +37,9 @@
   }
   .sidebarLogo img{
     width: 30px;
+  }
+  .sidebarLogo > h2{
+    display: none;
   }
   .listside{
     display: none;
@@ -99,7 +102,7 @@ a{
   position: absolute;
   bottom: 0;
   color: #eb0f0f;
-  padding: 5px 100px 5px 20px;
+  padding: 5px 5px 5px 20px;
   margin-bottom: 1rem;
 }
 .LogOut:hover {
