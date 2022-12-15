@@ -19,6 +19,7 @@ import ForgetPassword from "./Pages/UserReg/ForgetPassword";
 // import SettingsLayout from "./layout/SettingsLayout";
 import ReactOtpInput from "./Pages/UserReg/ReactOtpInput";
 import Settings from "./Components/Settings/Settings";
+import PaystackAcct from "./Components/Paystacck/PaystackAcct";
 // import DashboardLayout from "./layout/DashboardLayout";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Landingpage />} />
+        <Route path="/pay" element={<PaystackAcct />} />
+        
         <Route exact path="/allbooks" element={<BooksPage />} />
         <Route exact path="/savemoney" element={<Savemoneypage />} />
         <Route exact path="/buybooks" element={<Buybooks />} />
@@ -48,6 +51,7 @@ function App() {
 
   
       </Routes>
+        
     </div>
   );
 }

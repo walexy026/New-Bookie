@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import { PaystackButton } from 'react-paystack'
-
+import './Paystack.css'
+import logo from '../../Assets/logo.svg'
 
 const PaystackAcct = () => {
-    const publicKey = "pk_your_public_key_here"
+    const publicKey = "pk_test_b24efa220e2fb3286cb82c4125ccedda5ff4d624"
     const amount = 1000000 // Remember, set in kobo!
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
@@ -25,33 +26,43 @@ const PaystackAcct = () => {
 
   return (
     <div>
-<div className="checkout-form">
-  <div className="checkout-field">
-    <label>Name</label>
-    <input
-      type="text"
-      id="name"
-      onChange={(e) => setName(e.target.value)}
-    />
-  </div>
-  <div className="checkout-field">
-    <label>Email</label>
-    <input
-      type="text"
-      id="email"
-      onChange={(e) => setEmail(e.target.value)}
-    />
-  </div>
-  <div className="checkout-field">
-    <label>Phone</label>
-    <input
-      type="text"
-      id="phone"
-      onChange={(e) => setPhone(e.target.value)}
-    />
-  </div>
-  <PaystackButton className="paystack-button" {...componentProps} />
-</div>
+<div className="paystackinfo">
+      <div className="container">
+        <div className="item">
+          <img src={logo}  />
+          <div className="item-details">
+            <p className='item-details__title'>Dancing Shoes</p>
+            <p className='item-details__amount'>{amount}</p>
+          </div>
+        </div>
+        <div className="checkout-form">
+          <form className='checkout-form'>
+            <label className='checkout-field'  label>Name</label>
+            <input
+             className='checkout-field'
+              type="text"
+              id="name"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label className='checkout-field'>Email</label>
+            <input
+             className='checkout-field'
+              type="text"
+              id="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className='checkout-field'>Phone</label>
+            <input 
+            className='checkout-field'
+              type="text"
+              id="phone"
+              onChange={(e) => setPhone(e.target.value)}
+            />
+          </form>
+          <PaystackButton className='paystack-button' {...componentProps} />
+        </div>
+      </div>
+    </div>
     </div>
   )
 }

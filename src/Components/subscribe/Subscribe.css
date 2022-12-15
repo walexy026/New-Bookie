@@ -11,7 +11,7 @@
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     max-width: 1240px;
-    margin-left: 1.5rem;
+    margin-left: 3.1rem;
     margin-bottom: 1rem;
 }
 
@@ -106,13 +106,14 @@ padding-bottom: 1rem;
 @media only screen and (max-width:768px) {
     .subscribe-main-container {
         flex-direction: column;
+        margin-left: 1rem;
     }
     .subscribe-section {
         padding: 1.2rem 0.3rem;
     }
     .subscribe-container{
         text-align: center;
-        padding: 1rem;
+        padding: 0.5rem;
     }
     #subscribe-input{
         width: 100%;

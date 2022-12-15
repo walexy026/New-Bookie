@@ -1,7 +1,7 @@
 import React , {useEffect, useState} from 'react'
-import { BsStarFill } from "react-icons/bs"
 // import data from './bookData'
 import './Book.css'
+import StarRating from './StarRating';
 
 
 const url = 'https://bookie-app.onrender.com/api/books'
@@ -39,11 +39,9 @@ export default function Books() {
                                 <div className='description-price-container'>
                                 <h4 className='book-description'>{bookPublisher}</h4>
                                 <div>
-                                <BsStarFill className='star-icon'/>
-                                <BsStarFill className='star-icon'/>
-                                <BsStarFill className='star-icon'/>
-                                <BsStarFill className='star-icon'/>
-                                <BsStarFill className='star-icon'/></div>
+                                    <StarRating/>
+                               
+                               </div>
                                 </div>
                             </div>
                         </div>
