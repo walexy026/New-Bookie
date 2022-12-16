@@ -1,7 +1,7 @@
 import React from 'react';
 // import Navbar from '../../Components/nav-bar/Navbar';
-import BookShelf from '../../Assets/book-shelf.svg';
 import './Buybooks.css';
+import BookShelf from '../../Assets/book-shelf.svg';
 import WhyUs from '../../Components/why-choose-us/WhyUs';
 import Girls from '../../Assets/gils-on-bed.svg';
 import Books from '../../Components/books/Books';
