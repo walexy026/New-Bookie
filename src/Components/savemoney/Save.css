@@ -57,24 +57,40 @@
     text-align: justify;
 }
 .save-section-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: 'Bree Serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
     background: #1ABCCA;
     border-radius: 5px;
     border: none;
-   padding: 0.7rem 1.3rem;
+    width: 8.5rem;
+    height: 2.5rem;
     cursor: pointer;
+    /* padding: 3.2rem; */
     transition: all 1s ease-in;
 }
-.readmore{
-    width: 8.6px;
-    height: 8.34px;
+.save-sect-btn{
+    transition: all 1s ease-in;
+    text-align: center;
+    color: #FFFFFF;
+    background: #1ABCCA;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Bree Serif';
+    height: 2.5rem;
+
 }
+
 .save-section-btn:hover {
     opacity: 0.6;
 }
@@ -170,19 +186,24 @@
                 flex-direction: column-reverse;
             }
          .container-heading {
-            margin: auto;
+            /* margin: auto; */
             font-size: 30px;
             color: #595757;
+            margin-left: 7rem;
          }
         .container-para{
-            margin: auto;
+            margin-top: 2rem;
             font-size: 18px;
             line-height: 25px;
             width: 220px;
             text-align: center;
+            margin-left: 3rem;
         }
         .save-section-btn{
             align-self:  center;
+        }
+        .save-sect-btn{
+            margin-left: 7.5rem;
         }
         }
 

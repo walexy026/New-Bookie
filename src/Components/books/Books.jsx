@@ -39,7 +39,7 @@ export default function Books() {
                                 <div className='description-price-container'>
                                 <h4 className='book-description'>{bookPublisher}</h4>
                                 <div>
-                                    <StarRating/>
+                                    <StarRating />
                                
                                </div>
                                 </div>

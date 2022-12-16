@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactStars from "react-rating-stars-component";
 
 const StarRating = () => {
-    const ratingChanged = (newRating) => {
-        console.log(newRating);
-      };
+const [rating, setRating] = useState('')
+
+const ratingChanged = (e) =>{
+setRating(rating)
+console.log(e)
+}  
+
+// const ratingChanged = (newRating) => {
+//         // console.log(newRating);
+      
+//       };
    
   return (
     <div>
-   
+   {rating}
     <div>
     <ReactStars
     count={5}

@@ -259,7 +259,7 @@ export default function Header() {
                             <h3 className="text-base font-medium text-gray-500">
                               Recent Posts
                             </h3>
-                            {/* // eslint-disable-next-line */}
+                            // eslint-disable-next-line
                             <ul role="list" className="mt-4 space-y-4">
                               {recentPosts.map((post) => (
                                 <li

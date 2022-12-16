@@ -4,6 +4,7 @@
     background: #DFE2E2;
     padding: 1rem 0;
     flex-wrap: wrap;
+    width: 100%;
 }
 .why-choose-us-container {
     display: flex;

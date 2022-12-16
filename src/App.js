@@ -29,9 +29,9 @@ function App() {
         <Route path="/" element={<Landingpage />} />
         <Route path="/pay" element={<PaystackAcct />} />
         
-        <Route exact path="/allbooks" element={<BooksPage />} />
-        <Route exact path="/savemoney" element={<Savemoneypage />} />
-        <Route exact path="/buybooks" element={<Buybooks />} />
+        <Route path="/allbooks" element={<BooksPage />} />
+        <Route path="/savemoney" element={<Savemoneypage />} />
+        <Route path="/buybooks" element={<Buybooks />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/otp" element={<ReactOtpInput />} />
         <Route path="/login" element={<Login />} />
