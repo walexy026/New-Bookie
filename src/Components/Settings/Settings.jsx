@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "./Settings.css";
-import { BsChevronRight } from "react-icons/bs";
+// import { BsChevronRight } from "react-icons/bs";
 import { Icon } from "@iconify/react";
 import { Link, Outlet } from "react-router-dom";
 import UpperPanel from "../UpperPanel/UpperPanel";
@@ -81,16 +81,16 @@ const Settings = () => {
                     <li className="listsettings">
                       <Icon
                         icon="icon-park:me"
-                        style={{ fontSize: "2rem", marginRight: "0.5rem" }}
+                        style= {{ fontSize: "2rem", marginRight: "0.5rem" }}
                       />
                       <div
                         className="acctsetts"
-                        style={{ marginRight: "3rem" }}
+                        // style={{ marginRight: "1rem" }}
                       >
                         <b className="acctfont"> Account settings </b>
-                        <b id="pi">Personal information, Notification</b>
+                        {/* <b id="pi">Personal information, Notification</b> */}
                       </div>
-                      <BsChevronRight />
+                      {/* <BsChevronRight /> */}
                     </li>
                   </Link>
                   <Link to={"/dashboard/settings/securitySettings"}>
@@ -101,12 +101,12 @@ const Settings = () => {
                       />
                       <div
                         className="acctsetts"
-                        style={{ marginRight: "0.1rem" }}
+                        // style={{ marginRight: "3rem" }}
                       >
                         <b className="acctfont">Security</b>
-                        <b id="pi">Change password ,Authemtication Number</b>
+                        {/* <b id="pi">Change password ,Authemtication Number</b> */}
                       </div>
-                      <BsChevronRight />
+                      {/* <BsChevronRight /> */}
                     </li>
                   </Link>
                   <li className="listsettings">
@@ -114,23 +114,27 @@ const Settings = () => {
                       icon="icon-park:me"
                       style={{ fontSize: "2rem", marginRight: "0.5rem" }}
                     />
-                    <div className="acctsetts " style={{ marginRight: "3rem" }}>
+                    <div className="acctsetts " 
+                    // style={{ marginRight: "3rem" }}
+                    >
                       <b className="acctfont">Appearances</b>
-                      <b id="pi">Dark and Light Mode , Front Size </b>
+                      {/* <b id="pi">Dark and Light Mode , Front Size </b> */}
                     </div>
-                    <BsChevronRight />
+                    {/* <BsChevronRight /> */}
                   </li>
                   <li className="listsettings">
                     <Icon
                       icon="icon-park:me"
                       style={{ fontSize: "2rem", marginRight: "0.5rem" }}
                     />{" "}
-                    <div className="acctsetts" style={{ marginRight: "3rem" }}>
+                    <div className="acctsetts" 
+                    // style={{ marginRight: "3rem" }}
+                    >
                       <b className="acctfont">Appearances</b>
-                      <b id="pi">Dark and Light Mode , Front Size </b>{" "}
+                      {/* <b id="pi">Dark and Light Mode , Front Size </b>{" "} */}
                     </div>
                     <div>
-                      <BsChevronRight />
+                      {/* <BsChevronRight /> */}
                     </div>
                   </li>
                 </ul>

@@ -9,10 +9,12 @@
   line-height: 30px;
   color: #595757;
 }
-
-label {
+.labelsecurity{
   display: block;
 }
+/* label {
+  display: block;
+} */
 .securitySettings p {
   font-weight: 400;
   font-size: 16px;
@@ -28,7 +30,7 @@ label {
   /* justify-content: center; */
 }
 .acctInput {
-  min-width: 350px;
+  max-width: 350px;
   border-radius: 5px;
   padding: 0.1rem 0.5rem;
   /* border: red; */

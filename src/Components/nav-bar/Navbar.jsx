@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/logo.svg";
-import {} from "react-icons";
+import {FaBars} from 'react-icons/fa'
+import {GrClose} from "react-icons/gr";
 import dropDown from "../../Assets/drop-down.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
-  function handleClick() {
-    setToggle(!toggle);
+  const handleToggle = () => {
+    return setToggle(prevToggle =>!prevToggle)
   }
   return (
     <header>
@@ -35,11 +36,11 @@ const Navbar = () => {
       <div className="navbtn">
         <button className="navbtnlogin"><Link to='/login'>Login</Link></button>
         <button className="navbtnsignup"><Link to='/signup'>Sign Up</Link></button>
-        <button className="hamburger" onClick={handleClick}>
+        <button className="hamburger" onClick={handleToggle}>
           {toggle ? (
-            <span className="open">&#9776;</span>
+            <span className="open"><FaBars/> </span>
           ) : (
-            <span className="close">&times;</span>
+            <span className="close"><GrClose/></span>
           )}
         </button>
       </div>

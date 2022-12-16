@@ -1,20 +1,23 @@
 .refferalWrapper{
     /* margin-top: 10vh; */
-width: 80vw;
-    /* display: none; */
+    width: -webkit-fill-available;
+    padding: 0rem 1rem;
+}
+@media only screen and (max-width:600px) {
+    .refferalWrapper{
+        padding: 0;
+    }
 }
 .refferal{
     font-family: Outfit;
     background-color: #EFF6F8;
-    /* background-color: red; */
-    /* padding: 5rem; */
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-    padding: 40px;
+    padding: 20px;
 }
 .refferalWrap{
     background-color: #FFFFFF;
-/* background-color: red; */
+
 }
 .referralTable{
     width: 100%;
@@ -28,6 +31,7 @@ width: 80vw;
     width: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 10px;
     background-color: #EFF6F8;

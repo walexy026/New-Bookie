@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../Components/nav-bar/Navbar';
+// import Navbar from '../../Components/nav-bar/Navbar';
 import BookShelf from '../../Assets/book-shelf.svg';
 import './Buybooks.css';
 import WhyUs from '../../Components/why-choose-us/WhyUs';
@@ -8,11 +8,13 @@ import Books from '../../Components/books/Books';
 import Button from '../../Components/button/Button';
 import Subscribe from '../../Components/subscribe/Subscribe';
 import Footer from '../../Components/footer/Footer';
+import Header from '../../Components/header/header';
 
 export default function Buybooks() {
 	return (
 		<main>
-			<Navbar />
+			{/* <Navbar /> */}
+			<Header/>
 			<section className='buy-book-hero-section'>
 				<div className='buy-book-hero-right-container'>
 					<h2 className='buybooks-heading'>

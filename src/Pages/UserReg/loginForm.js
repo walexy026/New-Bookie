@@ -26,19 +26,21 @@ const LoginForm = () => {
             console.log(response);
             if(response?.status === 200){
               navigate("/Dashboard")
-            }
-           
-            
+            }       
           })
-          .catch (function (error) {
-           
-            console.error(error.response.data);     // NOTE - use "error.response.data` (not "error")
+          .catch (function (err) {
+           setErrors(err.message)
+            console.error(err.response);     // NOTE - use "error.response.data` (not "error")
           });
-    
-    
+        };
+        
+       
+       
+
+
+
+
         // setCorrectdata(true);
-      };
-    
     //   useEffect(() => {
     //     if (Object.keys(errors).length === 0 && correctData) {
   

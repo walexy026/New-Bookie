@@ -14,7 +14,7 @@ display: none;
     justify-content:center;
     align-items: center;
     gap: 5rem;
-    /* width: 100%; */
+    width: 100%;
     margin: 1rem;
 }
 
@@ -28,7 +28,12 @@ display: none;
 }
 @media only screen and (max-width:768px) {
     .inputField{
-        width: 300px;
+        width: 270px;
+    }
+    .inputDiv{
+        gap: 1rem;
+        margin: 0rem;
+        padding-bottom: 1rem;
     }
 }
 .inputField:focus{
@@ -38,6 +43,7 @@ display: none;
 .profileRadio{
     display: flex;
     padding-left: 1rem;
+    padding-top: 1rem;
     /* justify-content: flex-start; */
     gap: 0.5rem;
 }
@@ -56,5 +62,5 @@ display: none;
 
 .profilebtnSubmit:hover{
     background: #04454b;
-    background: #070679;
+    /* background: #070679; */
 }

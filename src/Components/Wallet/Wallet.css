@@ -1,9 +1,8 @@
 .walletWrapper{
   position: relative;
-  width: 80vw;
-  
+  width:-webkit-fill-available;
+  padding: 0rem 1rem;  
   background-color:  #F5F5F5;
-/* margin-top: 10vh; */
 }
 .upperWallet{
     display: flex;
@@ -11,6 +10,16 @@
     margin-right: 5rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+@media only screen and (max-width:800px) {
+  .upperWallet{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mycard{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .walletOverviewContainer {
@@ -25,9 +34,15 @@
     border-radius: 10px;
   color: #fff;
   border: #1abcca;
-  padding: 0.5rem 1.2rem;
-  position: absolute;
-  right: 30px;
+  padding: 0.5rem 1rem;
+  /* position: absolute; */
+  /* right: 30px; */
+}
+.mycard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
 }
 .walletOverviewContainer  h6{
     color: #595757;

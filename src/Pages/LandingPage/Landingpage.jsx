@@ -7,12 +7,14 @@ import TestimonialCarousel from '../../Components/Testimonial/TestimonialCarouse
 import Subscribe from '../../Components/subscribe/Subscribe';
 import Books from '../../Components/books/Books';
 import Button from '../../Components/button/Button';
+import Header from '../../Components/header/header';
 
 
 export default function Landingpage() {
 	return (
 		<>
-			<Navbar />
+			{/* <Navbar /> */}
+			<Header/>
 			<Hero />
 			<Save />
 			<Button/>

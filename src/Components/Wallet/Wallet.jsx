@@ -12,7 +12,7 @@ const Wallet = () => {
       <div className="upperWallet">
       <WalletOverview />
       <AtmCard />
-      <button className="btnAddNewCard">Add new Card</button>
+      {/* <button className="btnAddNewCard">Add new Card</button> */}
       </div>
       <RecentTransactions />
     

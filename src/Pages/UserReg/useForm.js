@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Useform = () => {
   const [values, setValue] = useState({
-    email: "",
+    email : "",
     phoneNumber: "",
     password: "",
   });
@@ -14,6 +14,7 @@ const Useform = () => {
   const navigate = useNavigate();
 
   const [errors, setErrors] = useState({});
+  // const [response, setResponse] = useState({})
 
   // const [correctData, setCorrectdata] = useState(false);
 
@@ -25,19 +26,17 @@ const Useform = () => {
     setErrors(Validate(values));
    
       axios.post('https://bookie-app.onrender.com/api/user/signup', values).then((response) => {
-        if(response?.status === 201) {
+        if(response?.status === 201 ) {
           localStorage.setItem('createdId',  response?.data?.userId);
           navigate('/otp')
         }
         
-        console.log(response.data.token);
+        console.log(response.data);
       })
       .catch (function (error) {
-        console.error(error.response.data);     
+        console.error(error.response);     
       });
 
-
-    // setCorrectdata(true);
   };
 
   // useEffect(() => {

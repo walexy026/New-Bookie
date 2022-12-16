@@ -19,15 +19,19 @@ import ForgetPassword from "./Pages/UserReg/ForgetPassword";
 // import SettingsLayout from "./layout/SettingsLayout";
 import ReactOtpInput from "./Pages/UserReg/ReactOtpInput";
 import Settings from "./Components/Settings/Settings";
+import PaystackAcct from "./Components/Paystacck/PaystackAcct";
 // import DashboardLayout from "./layout/DashboardLayout";
+
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Landingpage />} />
-        <Route exact path="/allbooks" element={<BooksPage />} />
-        <Route exact path="/savemoney" element={<Savemoneypage />} />
-        <Route exact path="/buybooks" element={<Buybooks />} />
+        <Route path="/pay" element={<PaystackAcct />} />
+        
+        <Route path="/allbooks" element={<BooksPage />} />
+        <Route path="/savemoney" element={<Savemoneypage />} />
+        <Route path="/buybooks" element={<Buybooks />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/otp" element={<ReactOtpInput />} />
         <Route path="/login" element={<Login />} />
@@ -40,34 +44,14 @@ function App() {
           <Route path="/dashboard/Wallet" element={<Wallet />} />
           <Route path="/dashboard/settings" element={<Settings />}>
             <Route path="/dashboard/settings/" element={<AccountSettings/>} />
+            {/* <Route path="/dashboard/accountsettings" element={<AccountSettings/>} /> */}
             <Route path="/dashboard/settings/securitysettings" element={<SecuritySettings/>} />
           </Route>
         </Route>
 
-        {/* <div className="dashboard"> */}
-        {/* <UpperPanel /> */}
-        {/* <div className="dashboardSegment"> */}
-        {/* <div className="fillup"> */}
-        {/* <Sidebars /> */}
-        {/* <Routes> */}
-        {/* <Route path="/ii" element={<Overview />} /> */}
-        {/* 
-              <Route element = {<DashboardLayout/>} >
-                <Route path = "/dashboard/*" element= {<Sidebars/>}/>
-              </Route> */}
-
-        {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
-
-        {/*             
-              <Route element={<SettingsLayout />}>
-                <Route path="/settings/*" element={<Settings />} />
-              </Route>
-             
-            </Routes> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
+  
       </Routes>
+        
     </div>
   );
 }

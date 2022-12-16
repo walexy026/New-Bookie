@@ -1,8 +1,12 @@
+.savingsS{
+  width: -webkit-fill-available;
+  padding: 0rem 1rem;
+}
+
 .overlay {
   font-family: "Outfit";
   width: 80vw;
   height: 100vh;
-  /* position: fixed; */
   background-color: rgba(247, 241, 241, 0.5);
   display: flex;
   justify-content: center;
@@ -106,6 +110,7 @@
   border: none;
   padding: 5px 10px;
 }
+
 .ta {
   /* padding: 3rem; */
   width: 370px;
@@ -113,6 +118,21 @@
   border-radius: 50px;
   color: #595757;
 }
+@media only screen and (max-width:550px){
+  .ta{
+    width: 315px;
+    margin: 0.2rem;
+  }
+  .createGoal{
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+  }
+  .toptable > b{
+font-size: 10px;
+padding: 1rem;
+  }
+}
+
 .tdRightAlign {
   padding-left: 1rem;
 }

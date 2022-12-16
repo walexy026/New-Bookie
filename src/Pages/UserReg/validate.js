@@ -2,6 +2,7 @@ export const Validate = (values) => {
   let errors = {};
   let pattern = /\S+@\S+\.\S+/;
 
+
   if (!values.email) {
     errors.email = "Email Field is Required";
   } else if (!pattern.test(values.email)) {
@@ -19,6 +20,7 @@ export const Validate = (values) => {
   } else if (values.password.length < 5) {
     errors.password = "Password must be more than five characters.";
   }
+  
 
   return errors;
 };

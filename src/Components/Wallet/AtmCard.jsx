@@ -10,7 +10,10 @@ const AtmCard = () => {
 
   return (
     <div >
+      <div className='mycard'>
         <h5>My card</h5>
+        <button className="btnAddNewCard">Add new Card</button>
+      </div>
         <>
             <ATMCard
               year={year}
