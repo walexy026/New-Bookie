@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../Components/nav-bar/Navbar';
+import Navbars from '../../Components/nav-bar/Navbars';
 import Coins from '../../Assets/save-coins.svg';
 import './Savemoneypage.css';
 import WhyUs from '../../Components/why-choose-us/WhyUs';
@@ -14,7 +14,7 @@ import Footer from '../../Components/footer/Footer';
 export default function Savemoneypage() {
 	return (
 		<main>
-			<Navbar />
+			<Navbars />
 			<section className='savemoney-hero-section'>
 				<div className='saveoney-heading-container'>
 					<h2 className='savemoney-heading'>

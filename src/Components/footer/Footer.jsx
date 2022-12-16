@@ -71,7 +71,7 @@ export default function Footer() {
           )}
         </div>
         <div className={FooterCSS.list}>
-          <div className="firstlist" onClick={toggleAccount}>
+          <div className="secondlist" onClick={toggleAccount}>
             {" "}
             My Account
           </div>

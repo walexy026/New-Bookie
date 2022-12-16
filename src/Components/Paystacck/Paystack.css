@@ -76,7 +76,7 @@
   margin-bottom: 20px;
 }
 
-.checkout-field label {
+.checkout-field > label {
   text-align: left;
   color: #e0eafc;
   /* color: red; */

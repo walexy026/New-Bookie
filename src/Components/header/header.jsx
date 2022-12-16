@@ -20,14 +20,14 @@ import { Link } from "react-router-dom";
 
 const solutions = [
   {
-    name: "Analytics",
+    name: "Link",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "#",
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
+    name: "Contact Us",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "#",
     icon: CursorArrowRaysIcon,

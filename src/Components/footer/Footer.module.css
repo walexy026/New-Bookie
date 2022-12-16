@@ -81,6 +81,14 @@ li {
     color: #595757;
     font-weight: 700;
     padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+.secondlist{
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    color: #595757;
+    font-weight: 700;
+
 }
 
 .list ul li {
@@ -202,12 +210,19 @@ address {
         flex-direction: column;
         justify-content: center;
         flex-basis: 250px;
-        text-align: center;
+        text-align: -webkit-center;
     }
 
     .content {
         line-height: 1.5rem;
     }
+    .firstlist{
+        padding-left: 2rem;
+    }
+    .secondlist{
+        padding-left: 2rem;
+    }
+    
     /* .footerLink{
         display: none;
     } */
