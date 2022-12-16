@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../Components/nav-bar/Navbar';
+import Navbars from '../../Components/nav-bar/Navbars';
 import Books from '../../Components/books/Books';
 import Footer from '../../Components/footer/Footer';
 import Button from '../../Components/button/Button';
@@ -7,7 +7,7 @@ import Button from '../../Components/button/Button';
 export default function BooksPage() {
 	return (
 		<>
-			<Navbar />
+			<Navbars />
 			<Button />
 			<Books />
 			<Books />

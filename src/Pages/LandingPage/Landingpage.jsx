@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../Components/nav-bar/Navbar';
+import Navbars from '../../Components/nav-bar/Navbars';
 import Hero from '../../Components/hero-section/Hero-section';
 import Save from '../../Components/savemoney/Save';
 import Footer from '../../Components/footer/Footer';
@@ -7,14 +7,12 @@ import TestimonialCarousel from '../../Components/Testimonial/TestimonialCarouse
 import Subscribe from '../../Components/subscribe/Subscribe';
 import Books from '../../Components/books/Books';
 import Button from '../../Components/button/Button';
-import Header from '../../Components/header/header';
 
 
 export default function Landingpage() {
 	return (
 		<>
-			{/* <Navbar /> */}
-			<Header/>
+			<Navbars />
 			<Hero />
 			<Save />
 			<Button/>
