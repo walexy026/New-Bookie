@@ -63,8 +63,8 @@ const Navbars = () => {
     <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#"> <div className="navLogo">
-        <img src={Logo} alt="logo" className="nav-logo" />
-         <h2>Bookie</h2>
+      <Link to='/' >  <img src={Logo} alt="logo" className="nav-logo" />
+         <h2>Bookie</h2></Link>
        </div></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

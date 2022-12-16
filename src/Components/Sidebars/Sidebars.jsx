@@ -21,9 +21,10 @@ const Sidebars = () => {
           <div className="sidebarMenu">
             <ul className="sidebarList">
               <span className="sidebarLogo">
-              
+              <Link to='/'>
                 <img src={bookieLogo} alt="bookieLogo" />
                 <h2>Bookie</h2>
+              </Link>
               </span>
               
               <span className={toggle ?"listside" : null }>
